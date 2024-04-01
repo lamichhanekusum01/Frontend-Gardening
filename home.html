@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gardening Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="js/index.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-...your-sha-here..." crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="top-header">
+                <div class="top-header-left">
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i> 23 Florina Blvd</span>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i> (+1) 4371234567</span>
+                </div>
+                <div class="top-header-right">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="top-content top-content-home">
+            <div class="nav-container">
+                <div class="container">
+                    <nav>
+                        <div class="nav-left">
+                            <a href="index.html" class="frame-14"><img class="frame-14" src="images/logo.png"></a>
+                            <div class="text-wrapper-7">GardenWorks</div>
+                        </div>
+                        <div class="nav-right">
+                            <div class="nav-toggle">&#9776;</div>
+                            <div class="close-icon">&times;</div>
+                            <ul>
+                                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.html" class="request-button">Request a Quote</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="top-content-text">
+                    <p class="top-content-garden">Garden Maintenance, Landscaping, and Many more.</p>
+                    <p class="at-gardenworks-we">
+                        At Gardenworks, we are passionate about bringing nature's beauty to your doorstep. We have
+                        cultivated a reputation as a leading gardening service dedicated to transforming outdoor spaces
+                        into
+                        flourishing havens.
+                    </p>
+                    <div class="frame-21">
+                        <div class="frame-22">
+                            <a href="contact.html" class="text-wrapper-13">Contact us</a>
+                          </div>
+                        <div class="frame-23" id="video-container">
+                            <i class="fas fa-play"></i>
+                            <div class="text-wrapper-13" onclick="playVideo()">Play Video</div>
+                            <!-- Video overlay -->
+                            <div id="video-overlay">
+                                <span id="close-btn" onclick="closeVideoOverlay()">&#10006;</span>
+                                <video controls autoplay id="myVideo">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/Yzdabta1nAA?si=cAYZviVOjYD05EiZ"
+                                        title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frame-27">
+                        <p class="computer-users-and-p-4">Excellent Service and Well Trusted</p>
+                        <div class="frame-28">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <div class="computer-users-and-p-4">( 4.5/5 Ratings )</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+    </header>
+
+    <section class="container margint-110 mission">
+        <div>
+            <img src="images/image1.jpg" alt="gardening image1">
+        </div>
+        <div class="mission-right">
+            <h4>Mission & Story</h4>
+            <h2>Bringing nature's beauty to your doorstep</h2>
+            <p>
+                At the heart of Gardenworks, we are passionate about bringing nature's beauty to your doorstep. With a
+                deep-rooted love for gardens and a commitment to excellence, we have cultivated a reputation as a
+                leading gardening service dedicated to transforming outdoor spaces into flourishing heavens.
+
+                At the heart of Gardenworks, is a mission to create and maintain stunning gardens that enhance the
+                well-being of our clients and contribute to the beauty of our community.
+
+                We believe that a well-designed and cared-for garden is more than just a collection of plants – it's a
+                living work of art that brings joy, peace, and a touch of nature to your life.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="margint-110 services">
+        <div class="container">
+            <div class="services-container">
+                <div class="services-top-text">
+                    <h4>Services</h4>
+                    <div>
+                        <img src="images/logo.png" alt="GardenWorks Services">
+                        <span>GardenWorks Services</span>
+                    </div>
+                    <p>At the heart of Gardenworks is a mission to create and maintain stunning gardens that enhance the
+                        well-being of our clients and contribute to the beauty of our community.</p>
+                </div>
+                <div class="services-top-content">
+                    <div class="box">
+                        <img src="images/services1.jpg" alt="services1">
+                        <div class="text">
+                            <h5>Plant Care and Health</h5>
+                            <p>From soil analysis to pest control, we provide comprehensive care to ensure your plants
+                                thrive.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/services2.jpg" alt="services2">
+                        <div class="text">
+                            <h5>Organic Gardening Services</h5>
+                            <p>From organic soil amendments, Chemical-free pest control to Eco-friendly fertilization
+                                options.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/services3.jpg" alt="services3">
+                        <div class="text">
+                            <h5>Hedge and Shrub Maintenance</h5>
+                            <p>It follows Shaping and trimming, disease and pest control, Replacement or removal as
+                                needed.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/services4.jpg" alt="services4">
+                        <div class="text">
+                            <h5>Landscape Maintenance</h5>
+                            <p>Lawn mowing and edging Weed control with pruning and trimming of plants and trees
+                                Mulching and fertilization.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/services5.png" alt="services5">
+                        <div class="text">
+                            <h5>Seasonal Cleanups</h5>
+                            <p>Seasonal cleanup includes all the spring and fall cleanups, leaf removal and Gutter
+                                cleaning and soon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/services6.jpg" alt="services6">
+                        <div class="text">
+                            <h5>Commercial Gardening Services</h5>
+                            <p>Follows landscaping for businesses and public spaces and regular maintenance for
+                                corporate properties.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container margint-110 form">
+        <div class="frame-17">
+            <div class="testimonial">
+                <div class="title">
+                    <div class="div-wrapper">
+                        <h4>Testimonials</h4>
+                    </div>
+                    <p class="meet-with-clients-an">What our clients have to say about our service.</p>
+                </div>
+                <div class="testimonials">
+                    <div class="content-wrapper">
+                        <div class="content">
+                            <div class="content-2">
+                                <div class="person">
+                                    <div class="name">
+                                        <div class="person-2">
+                                            <img class="IMAGE" src="images/testimonial1.jpg">
+                                            <div class="name-2">
+                                                <div class="text-wrapper-10">John T.</div>
+                                                <div class="text-wrapper-11">Happy Homeowner</div>
+                                            </div>
+                                        </div>
+                                        <div class="icon"><img class="image" src="images/comma.png"></div>
+                                    </div>
+                                </div>
+                                <p class="i-can-t-express-how">
+                                    I can't express how thrilled I am with the garden transformation by your company .
+                                    From the
+                                    initial design consultation to the meticulous installation, every step was handled
+                                    with care and
+                                    expertise. My garden has become my little piece of paradise, and I can't thank the
+                                    team enough
+                                    for their dedication and creativity.
+                                </p>
+                            </div>
+                            <div class="navigation">
+                                <div class="overlap"><span class="vector">&gt;</span></div>
+                                <div class="overlap-group">
+                                    <div class="ellipse"></div>
+                                    <span class="vector-2">&lt;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="appoinment-form">
+                <div class="title">
+                    <div class="div-wrapper">
+                        <h4>Quote Now</h4>
+                    </div>
+                    <p class="meet-with-clients-an-2">Get a free service estimate.</p>
+                </div>
+                <form class="form" action="" method="post">
+                    <div class="form-2">
+                        <div class="content-3">
+                            <input placeholder="Full Name" type="text" required>
+                            <input placeholder="Email Address" type="email" required>
+                            <input placeholder="Phone Number" type="tel" required>
+                            <textarea rows="10" cols="67" id="message" name="message"
+                                placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="submit">
+                            <button type="submit" onclick="submitForm()">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="margint-110 our-story">
+        <div class="our-story-container">
+            <div class="overlap-wrapper">
+                <div class="overlap-2">
+                    <div class="frame-19 container">
+                        <div class="frame-20">
+                            <div class="div-wrapper">
+                                <h4>Our Story</h4>
+                            </div>
+                            <p class="meet-with-clients-an-3">Bringing nature's beauty to your doorstep</p>
+                        </div>
+                        <p class="computer-users-and-p-2">
+                            Founded in 1995, Gardenworks has grown from a small local venture to a thriving business
+                            serving locally
+                            and beyond. Our journey began with a simple belief – that everyone deserves a green and
+                            vibrant space to
+                            connect with nature.
+                        </p>
+                        <div class="frame-21">
+                            <div class="frame-22">
+                                <a href="contact.html" class="text-wrapper-13">Contact us</a>
+                              </div>
+                            <div class="frame-23">
+                                <div class="text-wrapper-13">See our Prospectus</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="margint-110 blogs">
+        <div class="container">
+            <div class="blogs-container">
+                <div class="services-top-text">
+                    <h4>Blogs & Articles</h4>
+                    <div>
+                        <span>Latest News and Articles</span>
+                    </div>
+                </div>
+                <div class="services-top-content">
+                    <div class="box">
+                        <img src="images/blog1.jpg" alt="blog1">
+                        <div class="text">
+                            <div class="blog-date">
+                                <p class="date">Nov 22,2023</p>
+                                <p class="author">Ravi</p>
+                            </div>
+                            <h5>Seasonal Planting Guide: What to Plant in Your Garden Throughout the Year</h5>
+                            <p>Explore the beauty of year-round gardening with our comprehensive seasonal planting
+                                guide.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/blog2.jpg" alt="blog2">
+                        <div class="text">
+                            <div class="blog-date">
+                                <p class="date">Nov 22,2023</p>
+                                <p class="author">William</p>
+                            </div>
+                            <h5>Creating a Wildlife-Friendly Garden: Tips for Attracting Birds, Bees, and Butterflies
+                            </h5>
+                            <p>Transform your garden into a haven for local wildlife with our guide to creating a
+                                wildlife-friendly garden.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/services1.jpg" alt="bolg3">
+                        <div class="text">
+                            <div class="blog-date">
+                                <p class="date">Nov 22,2023</p>
+                                <p class="author">Ram</p>
+                            </div>
+                            <h5>The Art of Container Gardening: Bringing Greenery to Small Spaces</h5>
+                            <p>From choosing the right containers to selecting the perfect plants, this guide has you
+                                covered.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="are-you-ready margint-110">
+        <div class="are-you-ready-container">
+            <div class="container">
+                <div class="frame-30">
+                    <div class="overlap-8">
+                        <div class="rectangle"></div>
+                        <img class="oval" src="images/Oval.png">
+                        <img class="frame-31" src="images/frame2.png">
+                        <img class="frame-32" src="images/Frame.png">
+                        <div class="frame-33">
+                            <p class="text-wrapper-17">Are you ready to use our Gardening Service?</p>
+                            <div class="frame-34">
+                                <p class="text-wrapper-18">
+                                    Call us now for adding the softness of greenery helps to make a house feel more like
+                                    a home. We offer
+                                    these services to both commercial and domestic customers.
+                                </p>
+                                <div class="frame-21">
+                                    <div id="frame-35" class="frame-35">
+                                        <img class="img-2" src="images/Vector (1).png">
+                                        <div class="text-wrapper-19">Call us directly!</div>
+                                      </div>
+                                    <div class="frame-36">
+                                        <img class="img-2" src="images/check-circle.png">
+                                        <div class="text-wrapper-13">Quote now!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="dot-pattern-2" src="images/Dot Pattern 2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="div-3">
+                    <div class="div-2">
+                        <img class="frame-14" src="images/logo.png">
+                        <div class="text-wrapper-7">GardenWorks</div>
+                    </div>
+                    <p class="we-believe-that-a">
+                        We believe that a well-designed and cared-for garden is more than just a collection of plants –
+                        it's
+                        a living work of art that brings joy, peace, and a touch of nature to your life.
+                    </p>
+                    <img class="img" src="images/social.png">
+                </div>
+                <div class="element">
+                    <div class="box-3">Services</div>
+                    <div class="frame-15">
+                        <div class="box-4">
+                            <div class="text-wrapper-8">Garden Maintainence</div>
+                            <div class="text-wrapper-9">Landscaping</div>
+                            <div class="text-wrapper-9">Garden Design</div>
+                            <div class="text-wrapper-9">Lawn Care</div>
+                        </div>
+                        <div class="box-4">
+                            <div class="text-wrapper-8">Cleaning Tree</div>
+                            <div class="text-wrapper-9">Fence Clean</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="box-3">Company</div>
+                    <div class="frame-16">
+                        <div class="box-4">
+                            <div class="text-wrapper-8">About Us</div>
+                            <div class="text-wrapper-9">Blog</div>
+                            <div class="text-wrapper-9">Careers</div>
+                            <div class="text-wrapper-9">Contact Us</div>
+
+                        </div>
+                        <div class="box-4">
+                            <div class="text-wrapper-8">Help Center</div>
+                            <div class="text-wrapper-9">News</div>
+                            <div class="text-wrapper-9">Privacy</div>
+                            <div class="text-wrapper-9">Notice</div>
+                            <div class="text-wrapper-9">Guidelines</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/line.png" alt="footer-line" class="footer-line">
+            <div class="footer2">
+                <p>Garden Works© 2023. All rights reserved</p>
+                <p>Terms & Conditions - FAQ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Nav bar toggle script
+        document.addEventListener("DOMContentLoaded", function () {
+            const navToggle = document.querySelector(".nav-toggle");
+            const closeIcon = document.querySelector(".close-icon");
+            const navMenu = document.querySelector("nav ul");
+            const navLeft = document.querySelector(".nav-left");
+
+            navToggle.addEventListener("click", function () {
+                navMenu.classList.toggle("show");
+                toggleIcons();
+            });
+
+            closeIcon.addEventListener("click", function () {
+                navMenu.classList.remove("show");
+                toggleIcons();
+            });
+
+            function toggleIcons() {
+                navToggle.style.display = navMenu.classList.contains("show") ? "none" : "block";
+                closeIcon.style.display = navMenu.classList.contains("show") ? "block" : "none";
+                if (navMenu.classList.contains("show")) {
+                    navLeft.classList.add("fixed");
+                }
+                else {
+                    navLeft.classList.remove("fixed");
+                }
+            }
+        });
+
+
+        // Video play 
+        var videoOverlay = document.getElementById('video-overlay');
+        var video = document.getElementById('myVideo');
+
+        function playVideo() {
+            videoOverlay.style.display = 'flex';
+            video.play();
+        }
+
+        function closeVideoOverlay() {
+            videoOverlay.style.display = 'none';
+            video.pause();
+        }
+
+        function submitForm() {
+            alert("Form submitted successfully!");
+        }
+         // Get the element by its ID
+      var button = document.getElementById('frame-35');
+    
+      // Check if the element is found before adding the event listener
+      if (button) {
+        button.addEventListener('click', function() {
+          alert('This is not a right application to call. Please reach out at 4378188991');
+        });
+      }
+    </script>
+
+</body>
+
+</html>
