@@ -1,0 +1,7 @@
+.top-navbar {
+    background-color: bisque;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #b1cc33;
+    font-weight: bolder;
+}
