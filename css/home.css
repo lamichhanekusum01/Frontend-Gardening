@@ -1,0 +1,27 @@
+.top-navbar {
+    background-color: bisque;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #b1cc33;
+    font-weight: bolder;
+}
+
+/* Footer */
+.garden-footer-border {
+    border-bottom: 2px solid #eeeeee;
+}
+
+.bd-footer a {
+    color: var(--bs-secondary-color);
+    text-decoration: none;
+}
+
+.bd-footer span {
+    color: var(--bs-body-color);
+    font-weight: bold;
+}
+
+.garden-btn {
+    color: #B1CD27 !important;
+    border: 1px solid #B1CD27 !important;
+}
