@@ -106,12 +106,12 @@
     border-bottom: 2px solid #eeeeee;
 }
 
-.bd-footer a {
+.garden-footer a {
     color: var(--bs-secondary-color);
     text-decoration: none;
 }
 
-.bd-footer span {
+.garden-footer span {
     color: var(--bs-body-color);
     font-weight: bold;
 }
