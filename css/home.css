@@ -1,13 +1,88 @@
+/* Navbar */
 .top-navbar {
     background-color: bisque;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
 }
-.navbar-nav .nav-link.active{
+
+.navbar-nav .nav-link.active {
     color: #b1cc33;
     font-weight: bolder;
 }
 
-.navbar-nav .nav-link:hover{
+.navbar-nav .nav-link:hover {
     color: #b1cc33;
+}
+
+/* Top */
+.garden-bgimg {
+    background-image: url(../images/cover.png);
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    min-height: 600px;
+    color: #fff;
+    position: relative;
+}
+
+.garden-bgimg-content {
+    padding-top: 10rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.garden-bgimg-content h1{
+    font-size: 4.5rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0px;
+    background: linear-gradient(180deg, rgb(0 0 0 / 65%) 51.37%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    opacity: 1;
+    padding: 20px;
+    text-align: center;
+    height: 90.2%;
+    z-index: 1;
+}
+
+.garden-bgimg .garden-rating {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.garden-bgimg .garden-rating-text {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Inter", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: -0.26px;
+    line-height: 27px;
+    white-space: nowrap;
+}
+
+.garden-bgimg .garden-rating-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.garden-bgimg .garden-rating-icon i {
+    color: yellow;
 }
 
 /* Footer */
@@ -28,5 +103,13 @@
 .garden-btn {
     color: #B1CD27 !important;
     border: 1px solid #B1CD27 !important;
+
+}
+
+@media (max-width:600px) {
+
+}
+
+@media only screen and (max-device-width: 1600px) {
 
 }
