@@ -7,6 +7,15 @@
     z-index: 99;
 }
 
+.top-navbar .garden-search-btn {
+    border-color: #b1cc33;
+}
+
+.top-navbar .garden-search-btn:hover {
+    background-color: #b1cc33;
+    color: #fff;
+}
+
 .navbar-nav .nav-link.active {
     color: #b1cc33;
     font-weight: bolder;
@@ -14,6 +23,45 @@
 
 .navbar-nav .nav-link:hover {
     color: #b1cc33;
+}
+
+.garden-user-circle {
+    position: relative;
+    display: block;
+    background-color: transparent;
+    color: #ffffff;
+    text-align: center;
+    width: 25px;
+}
+
+.garden-user-circle:after {
+    display: block;
+    padding-bottom: 100%;
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #b1cc33;
+    content: "";
+}
+
+.circle__inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.circle__wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.circle__content {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 /* Top */
@@ -36,7 +84,7 @@
     z-index: 2;
 }
 
-.garden-bgimg-content h1{
+.garden-bgimg-content h1 {
     font-size: 4.5rem;
 }
 
@@ -106,10 +154,6 @@
 
 }
 
-@media (max-width:600px) {
+@media (max-width:600px) {}
 
-}
-
-@media only screen and (max-device-width: 1600px) {
-
-}
+@media only screen and (max-device-width: 1600px) {}
