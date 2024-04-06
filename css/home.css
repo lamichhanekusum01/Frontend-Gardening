@@ -1,3 +1,8 @@
+/* Custom made css*/
+
+.garden-m-t {
+    margin-top: 7rem; 
+}
 /* Top */
 .garden-bgimg {
     background-image: url(../images/cover.png);
@@ -18,23 +23,11 @@
     z-index: 2;
 }
 
-.garden-bgimg-content h1{
+.garden-bgimg-content h1 {
     font-size: 4.5rem;
 }
 
-.garden-bgimg-overlay {
-    position: absolute;
-    top: 0px;
-    background: linear-gradient(180deg, rgb(0 0 0 / 65%) 51.37%, rgba(0, 0, 0, 0) 100%);
-    width: 100%;
-    opacity: 1;
-    padding: 20px;
-    text-align: center;
-    height: 90.2%;
-    z-index: 1;
-}
-
-.garden-bgimg .garden-rating {
+.garden-bgimg-content .garden-rating {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -42,7 +35,7 @@
     flex: 0 0 auto;
 }
 
-.garden-bgimg .garden-rating-text {
+.garden-bgimg-content .garden-rating-text {
     position: relative;
     width: fit-content;
     margin-top: -1px;
@@ -55,7 +48,7 @@
     white-space: nowrap;
 }
 
-.garden-bgimg .garden-rating-icon {
+.garden-bgimg-content .garden-rating-icon {
     display: inline-flex;
     align-items: center;
     gap: 9px;
@@ -63,16 +56,39 @@
     flex: 0 0 auto;
 }
 
-.garden-bgimg .garden-rating-icon i {
+.garden-bgimg-content .garden-rating-icon i {
     color: yellow;
 }
 
+.garden-bgimg-content .fa-angle-down:before {
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    bottom: -58px;
+    left: 41rem;
+    border: 2px solid #69a911;
+    padding: 10px 15px;
+    color: #69a911;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.garden-bgimg-overlay {
+    position: absolute;
+    top: 0px;
+    background: linear-gradient(180deg, rgb(0 0 0 / 65%) 75%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    opacity: 1;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    z-index: 1;
+}
+
 @media (max-width:600px) {
-    .garden-bgimg-content h1{
+    .garden-bgimg-content h1 {
         font-size: xxx-large;
     }
 }
 
-@media only screen and (max-device-width: 1600px) {
-
-}
+@media only screen and (max-device-width: 1600px) {}
