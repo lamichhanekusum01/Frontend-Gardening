@@ -27,6 +27,10 @@
     font-size: 4.5rem;
 }
 
+.garden-bgimg-content p {
+    width: 93%;
+}
+
 .garden-bgimg-content .garden-rating {
     display: inline-flex;
     flex-direction: column;
@@ -85,9 +89,19 @@
     z-index: 1;
 }
 
+.garden-mission img {
+    width: 100%;
+}
+
 @media (max-width:600px) {
     .garden-bgimg-content h1 {
         font-size: xxx-large;
+    }
+    .garden-bgimg-content .fa-angle-down:before {
+        display: none;
+    }
+    .garden-mission-content {
+        margin-top: 30px;
     }
 }
 
