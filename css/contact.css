@@ -1,8 +1,4 @@
 
-body {
-    padding-top: 207px;
-    position: relative;
-}
 /* Navbar */
 .top-navbar {
     background-color: bisque;
@@ -20,15 +16,99 @@ body {
 .navbar-nav .nav-link:hover {
     color: #b1cc33;
 }
+/*Start of Top content*/
+.garden-bgimg {
+    background-image: url(../images/garden.jpg);
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    min-height: 600px;
+    color: #fff;
+    position: relative;
+    margin-top: 4rem;
+}
+.garden-bgimg-content {
+    padding-top: 10rem;
+    position: absolute;
+    z-index: 2;
+}
 
-.container {
+.garden-bgimg-content h1 {
+    font-size: 4.5rem;
+}
+
+.garden-bgimg-content p {
+    width: 93%;
+}
+
+.garden-bgimg-content .garden-rating {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.garden-bgimg-content .garden-rating-text {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Inter", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: -0.26px;
+    line-height: 27px;
+    white-space: nowrap;
+}
+
+.garden-bgimg-content .garden-rating-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.garden-bgimg-content .garden-rating-icon i {
+    color: yellow;
+}
+
+.garden-bgimg-content .fa-angle-down:before {
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    bottom: -58px;
+    left: 41rem;
+    border: 2px solid #69a911;
+    padding: 10px 15px;
+    color: #69a911;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.garden-bgimg-overlay {
+    position: absolute;
+    top: 0px;
+    background: linear-gradient(180deg, rgb(0 0 0 / 65%) 75%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    opacity: 1;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    z-index: 1;
+}
+
+/* .container {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-}
-
+}*/
 .top-text {
     display: inline-flex;
     flex-direction: column;
@@ -62,17 +142,9 @@ body {
     letter-spacing: -0.26px;
     line-height: 27px;
     white-space: nowrap;
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; /* Set the height to cover the entire viewport */
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 51.37%, rgba(0, 0, 0, 0) 100%);
-    opacity: 1;
-    text-align: center;
-}
+} 
+/* End  of Top content */
+ 
 
 /* Footer */
 .garden-footer-border {
