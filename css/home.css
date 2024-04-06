@@ -126,8 +126,13 @@
     border-radius: 5px;
 }
 
+.garden-services-textbox {
+    width: fit-content;
+}
+
 .garden-services-textbox h5 {
     padding-top: 10px;
+    font-weight: bold;
 }
 
 .garden-services-textbox p {
