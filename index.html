@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,30 +14,31 @@
         <p>Register now to unlock our premium gardening service and take the first step toward cultivating a beautiful and bountiful garden.</p>
 		<br><br>
 		<p>Transform Your Outdoor Space with Expert Gardening Services!</p>
-        <button class="modal-button">REGISTER</button>
+        <button onclick="window.location.href='registration.html'">REGISTER</button>
+        <!-- Modified line -->
 		<br>
-		<p>I already have an account ? <a  href="login.html">Login</a></p>
+		<p>I already have an account ? <a href="registration.html">Login</a></p>
     </div>
     <!-- FORM -->
-    <div class="center-container">
-          <form action="#">
+    <div class="center-container" id="registrationFormContainer">
+          <form action="#" id="registrationForm">
             <p>Register</p>
-            <input type="text" id="name" placeholder="first name" value="" required>
-			<input type="text" id="name" placeholder="last name" value="" required>
+            <input type="text" id="firstName" placeholder="first name" value="" required>
+			<input type="text" id="lastName" placeholder="last name" value="" required>
             <input type="email" placeholder="email address">
             <input type="password" placeholder="password">
             <input type="password" placeholder="repeat password">
 
+            <button type="submit" class="submit-button">SUBMIT</button>
           </form> 
-          <button class="submit-button">SUBMIT</button>
-        <!-- SUBMITTED TEXT -->
-        <div class="submitted-text">
-            <h1 class="welcome">Welcome <span></span>!</h1>
-            <p>Transform Your Outdoor Space with Expert Gardening Services!
-            <br><br>I created a form simulation for this exercise.<br><br>
-            Please checkout my other submissions on Codepen!</p>
-            <button onclick="closeModal()">CLOSE</button>
-        </div>
+          <!-- SUBMITTED TEXT -->
+          <div class="submitted-text">
+              <h1 class="welcome">Welcome <span></span>!</h1>
+              <p>Transform Your Outdoor Space with Expert Gardening Services!
+              <br><br>I created a form simulation for this exercise.<br><br>
+              Please checkout my other submissions on Codepen!</p>
+              <button onclick="closeModal()">CLOSE</button>
+          </div>
     </div>
     <!-- END FORM -->
     <!-- SUBMITTED -->
