@@ -15,6 +15,7 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/navfooter.css">
 </head>
 
 <body>
@@ -35,13 +36,13 @@
                             <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="service.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -60,7 +61,7 @@
                     </ul>
                     <form class="d-flex me-auto" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="garden-search-btn btn" type="submit">Search</button>
                     </form>
                     <div>
                         <div class="container text-center">
@@ -76,7 +77,7 @@
                                     </div>
                                 </div>
                                 <div class="col text-center">
-                                    <div class="garden-user-box rounded-circle">BPM</div>
+                                    <div class="garden-user-box rounded-circle">B</div>
                                 </div>
                             </div>
                         </div>
@@ -86,12 +87,63 @@
         </nav>
     </section>
 
-    <section class="container-fluid">
+    <section class="garden-bgimg">
+        <div class="container">
+            <div class="garden-bgimg-content">
+                <h1>Garden Maintenance, Landscaping, and Many more.</h1>
+                <p>At Gardenworks, we are passionate about bringing nature's beauty to your doorstep. We have cultivated
+                    a
+                    reputation as a leading gardening service dedicated to transforming outdoor spaces into flourishing
+                    havens.
+                </p>
 
+                <div class="garden-rating">
+                    <p class="garden-rating-text">Excellent Service and Well Trusted</p>
+                    <div class="garden-rating-icon">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <div class="garden-rating-text">( 4.5/5 Ratings )</div>
+                    </div>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="garden-bgimg-overlay"></div>
+    </section>
+        
+    <section class="garden-mission garden-m-t">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
+              <div class="col">
+                <img src="images/image1.jpg" alt="Garden Mission">
+              </div>
+              <div class="col">
+                <div class="garden-mission-content">
+                    <h4>Mission & Story</h4>
+                    <h2>Bringing nature's beauty to your doorstep</h2>
+                    <p>
+                        At the heart of Gardenworks, we are passionate about bringing nature's beauty to your doorstep. With a
+                        deep-rooted love for gardens and a commitment to excellence, we have cultivated a reputation as a
+                        leading gardening service dedicated to transforming outdoor spaces into flourishing heavens.
+                        <br><br>
+                        At the heart of Gardenworks, is a mission to create and maintain stunning gardens that enhance the
+                        well-being of our clients and contribute to the beauty of our community.
+                        <br><br>
+                        We believe that a well-designed and cared-for garden is more than just a collection of plants – it's a
+                        living work of art that brings joy, peace, and a touch of nature to your life.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+    <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary garden-footer">
         <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
             <div class="row-cols-lg-2 row-cols-1 row garden-footer-border">
                 <div class="col">

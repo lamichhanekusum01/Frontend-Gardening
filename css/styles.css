@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -215,7 +214,7 @@ nav a {
     line-height: 24px;
 }
 
-.top-content-home .frame-21 {
+.top-content-home .garden-top-button {
     display: inline-flex;
     align-items: flex-start;
     gap: 12px;
@@ -223,7 +222,7 @@ nav a {
     flex: 0 0 auto;
 }
 
-.top-content-home .frame-22 {
+.top-content-home .garden-top-button-contact {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -237,7 +236,7 @@ nav a {
     cursor: pointer;
 }
 
-.top-content-home .frame-22:hover {
+.top-content-home .garden-top-button-contact:hover {
     background-color: #598e0e;
 }
 
@@ -256,7 +255,7 @@ nav a {
     white-space: nowrap;
 }
 
-.top-content-home .frame-23 {
+.top-content-home .garden-top-button-play {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -270,7 +269,7 @@ nav a {
     cursor: pointer;
 }
 
-.top-content-home .frame-23:hover {
+.top-content-home .garden-top-button-play:hover {
     background-color: #598e0e;
 }
 
@@ -894,14 +893,14 @@ nav a {
     line-height: 24px;
 }
 
-.our-story .frame-21 {
+.our-story .garden-top-button {
     display: inline-flex;
     align-items: flex-start;
     gap: 12px;
     flex: 0 0 auto;
 }
 
-.our-story .frame-22 {
+.our-story .garden-top-button-contact {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -914,7 +913,7 @@ nav a {
     border-color: #69A911;
 }
 
-.our-story .frame-23 {
+.our-story .garden-top-button-play {
     display: inline-flex;
     align-items: center;
     gap: 8px;
