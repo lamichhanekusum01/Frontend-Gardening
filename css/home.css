@@ -1,9 +1,19 @@
 /* Custom made css*/
 
 .garden-m-t {
-    margin-top: 7rem; 
+    margin-top: 7rem;
 }
-/* Top */
+
+.garden-section-topic {
+    background-color: #edffd3;
+    color: #69a911;
+    border-radius: 5px;
+    padding: 5px;
+    width: fit-content;
+    font-size: 20px; 
+}
+
+/*Start of Top content*/
 .garden-bgimg {
     background-image: url(../images/cover.png);
     min-height: 100%;
@@ -15,6 +25,7 @@
     min-height: 600px;
     color: #fff;
     position: relative;
+    margin-top: 4rem;
 }
 
 .garden-bgimg-content {
@@ -88,18 +99,27 @@
     height: 100%;
     z-index: 1;
 }
+/* End  of Top content */
 
+/* Start of Garden mission and story section */
 .garden-mission img {
     width: 100%;
 }
+
+.garden-mission-content h5:nth-child(1) {
+    font-style: italic;
+}
+/* End of Garden mission and story section */
 
 @media (max-width:600px) {
     .garden-bgimg-content h1 {
         font-size: xxx-large;
     }
+
     .garden-bgimg-content .fa-angle-down:before {
         display: none;
     }
+
     .garden-mission-content {
         margin-top: 30px;
     }
