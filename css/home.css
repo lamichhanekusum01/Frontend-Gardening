@@ -112,8 +112,9 @@
 /* End of Garden mission and story section */
 
 /* Start of Garden services section */
-.garden-services h4{
-    width: 100px;
+.garden-services h4,
+.garden-testimonial h4{
+    width: fit-content;
     margin: auto;
 }
 
@@ -139,6 +140,13 @@
     margin-bottom: 0px;
 }
 /* End of Garden services section */
+
+/* Start of Garden testimonial section */
+.garden-testimonial {
+    
+}
+
+/* End of Garden testimonial section */
 
 @media (max-width:600px) {
     .garden-bgimg-content h1 {
