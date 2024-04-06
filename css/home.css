@@ -111,6 +111,30 @@
 }
 /* End of Garden mission and story section */
 
+/* Start of Garden services section */
+.garden-services h4{
+    width: 100px;
+    margin: auto;
+}
+
+.garden-services h3{
+    font-weight: bold;
+}
+
+.garden-services-box {
+    border: 1px solid #d8dae5;
+    border-radius: 5px;
+}
+
+.garden-services-textbox h5 {
+    padding-top: 10px;
+}
+
+.garden-services-textbox p {
+    margin-bottom: 0px;
+}
+/* End of Garden services section */
+
 @media (max-width:600px) {
     .garden-bgimg-content h1 {
         font-size: xxx-large;
