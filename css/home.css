@@ -68,7 +68,9 @@
 }
 
 @media (max-width:600px) {
-
+    .garden-bgimg-content h1{
+        font-size: xxx-large;
+    }
 }
 
 @media only screen and (max-device-width: 1600px) {
