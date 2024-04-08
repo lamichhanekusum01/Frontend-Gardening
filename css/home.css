@@ -4,13 +4,18 @@
     margin-top: 7rem;
 }
 
+.garden-p-tb {
+    padding: 4rem 0;
+}
+
 .garden-section-topic {
     background-color: #edffd3;
     color: #69a911;
     border-radius: 5px;
     padding: 5px;
-    width: fit-content;
     font-size: 20px; 
+    margin: auto;
+    width: fit-content;
 }
 
 /*Start of Top content*/
@@ -112,12 +117,9 @@
 /* End of Garden mission and story section */
 
 /* Start of Garden services section */
-.garden-services h4,
-.garden-testimonial h4{
-    width: fit-content;
-    margin: auto;
+.garden-services {
+    background-color: #f1f3f8;
 }
-
 .garden-services h3{
     font-weight: bold;
 }
@@ -141,10 +143,22 @@
 }
 /* End of Garden services section */
 
+/* Start of Garden about section */
+.garden-about-video video{
+    width: -webkit-fill-available;
+}
+
+/* End of Garden about section */
+
 /* Start of Garden testimonial section */
 
 
 /* End of Garden testimonial section */
+
+/* Start of Garden Blog section */
+
+
+/* End of Garden Blog section */
 
 @media (max-width:600px) {
     .garden-bgimg-content h1 {
