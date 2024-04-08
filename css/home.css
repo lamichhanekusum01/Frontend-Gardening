@@ -18,6 +18,24 @@
     width: fit-content;
 }
 
+.garden-button-color {
+    border: none;
+    background-color: #69a911;
+    color: #ffffff;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 10px;
+}
+
+.garden-button-wcolor {
+    border: 1px #69a911 solid;
+    color: #ffffff;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 10px;
+    background-color: transparent;
+}
+
 /*Start of Top content*/
 .garden-bgimg {
     background-image: url(../images/cover.png);
@@ -106,7 +124,7 @@
 }
 /* End  of Top content */
 
-/* Start of Garden mission and story section */
+/* Start of Garden mission section */
 .garden-mission img {
     width: 100%;
 }
@@ -114,7 +132,7 @@
 .garden-mission-content h5:nth-child(1) {
     font-style: italic;
 }
-/* End of Garden mission and story section */
+/* End of Garden mission section */
 
 /* Start of Garden services section */
 .garden-services {
@@ -154,6 +172,32 @@
 
 
 /* End of Garden testimonial section */
+
+/* Start of Garden Story section */
+.garden-story {
+    background-image: url(../images/cover.png);
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    min-height: 400px;
+    color: #fff;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.garden-story-content {
+    position: absolute;
+    z-index: 3;
+}
+
+.garden-story-content p{
+    padding-right: 60px;
+}
+
+/* End of Garden Story section */
 
 /* Start of Garden Blog section */
 
