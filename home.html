@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/navfooter.css">
+
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 </head>
 
 <body>
@@ -249,44 +251,81 @@
             <p>At BrandScape, we take immense pride in the success stories of our clients, whose
                 experiences speak volumes about the quality and impact of our services.</p>
             <div class="container text-center">
-                <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
-                    <div class="col">
-                        <div class="p-3">
-                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="images/gallery1.jpg" class="d-block w-100" alt="...">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="images/gallery1.jpg" alt="Testimonial">
+                    </div>
+                    <div class="item">
+                        <img src="images/gallery1.jpg" alt="Testimonial">
+                    </div>
+                    <div class="item">
+                        <img src="images/gallery1.jpg" alt="Testimonial">
+                    </div>
+                    <div class="item">
+                        <img src="images/gallery1.jpg" alt="Testimonial">
+                    </div>
+                    <div class="item">
+                        <h4>5</h4>
+                    </div>
+                    <div class="item">
+                        <h4>6</h4>
+                    </div>
+                    <div class="item">
+                        <h4>7</h4>
+                    </div>
+                    <div class="item">
+                        <h4>8</h4>
+                    </div>
+                    <div class="item">
+                        <h4>9</h4>
+                    </div>
+                    <div class="item">
+                        <h4>10</h4>
+                    </div>
+                    <div class="item">
+                        <h4>11</h4>
+                    </div>
+                    <div class="item">
+                        <h4>12</h4>
+                    </div>
+                    <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
+                        <div class="col">
+                            <div class="p-3">
+                                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="images/gallery1.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/gallery2.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/gallery3.jpg" class="d-block w-100" alt="...">
+                                        </div>
                                     </div>
-                                    <div class="carousel-item">
-                                        <img src="images/gallery2.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/gallery3.jpg" class="d-block w-100" alt="...">
-                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
                                 </div>
-                                <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="p-3">
-                            <h3>Hear from our Satisfied Clients</h3>
-                            <p>At BrandScape, we take immense pride in the success stories of our clients, whose
-                                experiences speak volumes about the quality and impact of our services.</p>
+                        <div class="col">
+                            <div class="p-3">
+                                <h3>Hear from our Satisfied Clients</h3>
+                                <p>At BrandScape, we take immense pride in the success stories of our clients, whose
+                                    experiences speak volumes about the quality and impact of our services.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section class="garden-story garden-m-t garden-p-tb">
@@ -469,6 +508,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
