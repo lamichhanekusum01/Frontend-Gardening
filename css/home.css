@@ -8,6 +8,10 @@
     padding: 4rem 0;
 }
 
+.garden-p-t {
+    padding-top: 1rem;
+}
+
 .garden-section-topic {
     background-color: #edffd3;
     color: #69a911;
@@ -182,7 +186,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    min-height: 400px;
+    min-height: 335px;
     color: #fff;
     position: relative;
     margin-top: 4rem;
@@ -197,10 +201,29 @@
     padding-right: 60px;
 }
 
+.garden-story-content .row{
+    overflow: hidden;
+}
+
+
+
 /* End of Garden Story section */
 
 /* Start of Garden Blog section */
+.garden-blog .garden-services-box {
+    border: none;
+}
 
+.garden-blog .garden-services-textbox{
+    text-align: left !important;
+    width: 360px;
+    padding-left: 55px;
+    padding-top: 10px;
+}
+
+.garden-services-textbox span{
+    font-size: 14px;
+}
 
 /* End of Garden Blog section */
 
