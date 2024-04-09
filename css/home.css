@@ -12,13 +12,21 @@
     padding-top: 1rem;
 }
 
+.garden-p-color {
+    color: #adb5b1;
+}
+
 .garden-section-topic {
+    margin: auto;
+    width: fit-content;
+}
+
+.garden-subtitle-h4 {
     background-color: #edffd3;
     color: #69a911;
     border-radius: 5px;
     padding: 5px;
-    font-size: 20px; 
-    margin: auto;
+    font-size: 20px;
     width: fit-content;
 }
 
@@ -126,6 +134,7 @@
     height: 100%;
     z-index: 1;
 }
+
 /* End  of Top content */
 
 /* Start of Garden mission section */
@@ -136,13 +145,15 @@
 .garden-mission-content h5:nth-child(1) {
     font-style: italic;
 }
+
 /* End of Garden mission section */
 
 /* Start of Garden services section */
 .garden-services {
     background-color: #f1f3f8;
 }
-.garden-services h3{
+
+.garden-services h3 {
     font-weight: bold;
 }
 
@@ -163,18 +174,76 @@
 .garden-services-textbox p {
     margin-bottom: 0px;
 }
+
 /* End of Garden services section */
 
 /* Start of Garden about section */
-.garden-about-video video{
+.garden-about-video video {
     width: -webkit-fill-available;
 }
 
 /* End of Garden about section */
 
 /* Start of Garden testimonial section */
+.garden-testimonial {
+    position: relative;
+    background-color: #f1f3f8;
+}
 
+.garden-testimonial .owl-carousel .owl-nav button.owl-next {
+    position: absolute !important;
+    top: 0px;
+    right: 0px;
+    font-size: 50px;
+    color: #000;
+}
 
+.garden-testimonial .owl-carousel .owl-nav button.owl-prev {
+    position: absolute !important;
+    top: 0px;
+    right: 0px;
+    font-size: 50px;
+    color: #000;
+}
+
+.garden-testimonial-box {
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+.garden-testimonial-box p {
+    text-align: left;
+    height: 160px;
+    overflow-y: auto;
+}
+
+.garden-testimonial-box>img {
+    width: auto !important;
+    margin: 25px 0;
+}
+
+.garden-testimonial-box .row {
+    margin-top: 35px;
+}
+
+.garden-testimonial-box .row .col-3 {
+    width: fit-content;
+    padding-right: 25px;
+}
+
+.garden-testimonial-box .row img {
+    position: absolute;
+    width: 50px !important;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.garden-testimonial-box h6 {
+    line-height: 8px;
+    font-size: 14px;
+}
 /* End of Garden testimonial section */
 
 /* Start of Garden Story section */
@@ -197,11 +266,11 @@
     z-index: 3;
 }
 
-.garden-story-content p{
+.garden-story-content p {
     padding-right: 60px;
 }
 
-.garden-story-content .row{
+.garden-story-content .row {
     overflow: hidden;
 }
 
@@ -214,18 +283,21 @@
     border: none;
 }
 
-.garden-blog .garden-services-textbox{
+.garden-blog .garden-services-textbox {
     text-align: left !important;
     width: 360px;
     padding-left: 55px;
     padding-top: 10px;
 }
 
-.garden-services-textbox span{
+.garden-services-textbox span {
     font-size: 14px;
 }
 
 /* End of Garden Blog section */
+
+
+
 
 @media (max-width:600px) {
     .garden-bgimg-content h1 {
@@ -238,6 +310,24 @@
 
     .garden-mission-content {
         margin-top: 30px;
+    }
+
+    .garden-testimonial-box {
+        width: auto;
+    }
+
+    .garden-testimonial p {
+        height: 100px;
+    }
+
+    .garden-testimonial .owl-carousel .owl-nav button.owl-next {
+        bottom: -300px;
+        right: 10px;
+    }
+
+    .garden-testimonial .owl-carousel .owl-nav button.owl-prev {
+        bottom: -300px;
+        left: -400px;
     }
 }
 
