@@ -1,4 +1,4 @@
-/* Custom made css*/
+/* Start of Custom made css*/
 
 .garden-m-t {
     margin-top: 7rem;
@@ -47,6 +47,21 @@
     padding: 10px;
     background-color: transparent;
 }
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b1cc33;
+}
+
+/* End of Custom made css*/
 
 /*Start of Top content*/
 .garden-bgimg {
@@ -190,26 +205,42 @@
     background-color: #f1f3f8;
 }
 
-.garden-testimonial .owl-carousel .owl-nav button.owl-next {
+.garden-testimonial .container>p {
+    width: 600px;
+}
+
+.garden-testimonial .owl-carousel .owl-nav button.owl-next,
+.garden-testimonial .owl-carousel .owl-nav button.owl-prev {
     position: absolute !important;
-    top: 0px;
-    right: 0px;
-    font-size: 50px;
-    color: #000;
+    top: -115px;
+    font-size: 30px;
+    color: #69a911;
+    border: 1px solid #69a911;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.garden-testimonial .owl-carousel .owl-nav button.owl-next:hover,
+.garden-testimonial .owl-carousel .owl-nav button.owl-prev:hover {
+    color: #ffffff;
+    background-color: #69a911;
+    transition: 0.5s;
+}
+
+.garden-testimonial .owl-carousel .owl-nav button.owl-next {
+    right: 25px;
 }
 
 .garden-testimonial .owl-carousel .owl-nav button.owl-prev {
-    position: absolute !important;
-    top: 0px;
-    right: 0px;
-    font-size: 50px;
-    color: #000;
+    right: 80px;
 }
 
 .garden-testimonial-box {
     position: relative;
-    height: 300px;
-    width: 300px;
+    height: 370px;
+    width: 370px;
+    background-color: #ffffff;
+    padding: 25px;
 }
 
 .garden-testimonial-box p {
@@ -220,7 +251,7 @@
 
 .garden-testimonial-box>img {
     width: auto !important;
-    margin: 25px 0;
+    margin: 20px 0;
 }
 
 .garden-testimonial-box .row {
@@ -244,6 +275,7 @@
     line-height: 8px;
     font-size: 14px;
 }
+
 /* End of Garden testimonial section */
 
 /* Start of Garden Story section */
@@ -312,22 +344,26 @@
         margin-top: 30px;
     }
 
+    .garden-testimonial .container>p {
+        width: auto;
+    }
+
     .garden-testimonial-box {
         width: auto;
     }
 
-    .garden-testimonial p {
-        height: 100px;
+    .garden-testimonial .owl-carousel .owl-nav button.owl-next,
+    .garden-testimonial .owl-carousel .owl-nav button.owl-prev {
+        bottom: -40px;
+        top: auto;
     }
 
     .garden-testimonial .owl-carousel .owl-nav button.owl-next {
-        bottom: -300px;
-        right: 10px;
+        right: 38%;
     }
 
     .garden-testimonial .owl-carousel .owl-nav button.owl-prev {
-        bottom: -300px;
-        left: -400px;
+        left: 38%;
     }
 }
 
