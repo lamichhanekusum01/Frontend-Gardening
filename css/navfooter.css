@@ -28,7 +28,13 @@
 .navbar-nav .nav-link:hover {
     color: #b1cc33;
 }
-
+.cart-icon:hover,
+#heartIcon:hover,
+.garden-user-box:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Increase the size on hover */
+    transition: transform 0.2s ease; /* Add smooth transition */
+}
 .garden-user-box {
     background-color: #b1cc33;
     padding: 3px;
