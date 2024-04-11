@@ -161,6 +161,11 @@
     width: 100%;
 }
 
+.garden-mission-content {
+    padding-left: 2rem;
+    padding-right: 3rem;
+}
+
 .garden-mission-content p{
     text-align: justify;
     text-justify: inter-word;
