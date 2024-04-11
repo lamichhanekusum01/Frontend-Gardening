@@ -221,6 +221,7 @@
 </head>
 <body>
 
+  
 <div class="container right-panel-active">
     <!-- Sign Up -->
     <div class="container__form container--signup">
@@ -237,10 +238,11 @@
     <div class="container__form container--signin">
         <form action="#" class="form" id="form2">
             <h2 class="form__title">Sign In</h2>
-            <input type="email" placeholder="Email" class="input" />
-            <input type="password" placeholder="Password" class="input" />
+            <input type="email" id="username" placeholder="Email" class="input" />
+            <input type="password" id="password" placeholder="Password" class="input" autocomplete="current-password">
+
             <a href="#" class="link">Forgot your password?</a>
-            <button class="btn">Sign In</button>
+            <button id="loginBtn" class="btn">Sign In</button>
         </form>
     </div>
 
@@ -258,23 +260,40 @@
 </div>
 
 <script>
+    // Get necessary elements
     const signInBtn = document.getElementById("signIn");
     const signUpBtn = document.getElementById("signUp");
-    const fistForm = document.getElementById("form1");
-    const secondForm = document.getElementById("form2");
     const container = document.querySelector(".container");
+    const loginBtn = document.getElementById("loginBtn");
+    const usernameInput = document.getElementById("username");
+    const passwordInput = document.getElementById("password");
 
+    // Function to handle sign in button click
     signInBtn.addEventListener("click", () => {
         container.classList.remove("right-panel-active");
     });
 
+    // Function to handle sign up button click
     signUpBtn.addEventListener("click", () => {
         container.classList.add("right-panel-active");
     });
 
-    fistForm.addEventListener("submit", (e) => e.preventDefault());
-    secondForm.addEventListener("submit", (e) => e.preventDefault());
+    // Function to handle login button click
+    loginBtn.addEventListener("click", () => {
+        const username = usernameInput.value;
+        const password = passwordInput.value;
+
+        // Check if the username and password are valid
+        if (username === 'garden@email.com' && password === 'garden') {
+            // Redirect to the home page
+            window.location.href = './home.html'; // Adjust the path as necessary
+        } else {
+            // Display error message or handle invalid login
+            alert("Invalid username or password!");
+        }
+    });
 </script>
+
 
 </body>
 </html>

@@ -128,7 +128,9 @@
 .garden-bgimg-content .garden-rating-icon i {
     color: yellow;
 }
-
+.filled-heart {
+    color: red;
+}
 .garden-bgimg-content .fa-angle-down:before {
     font-weight: 600;
     font-size: 20px;
