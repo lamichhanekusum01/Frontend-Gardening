@@ -61,6 +61,10 @@
     background: #b1cc33;
 }
 
+.garden-italic {
+    font-style: italic
+}
+
 /* End of Custom made css*/
 
 /*Start of Top content*/
@@ -157,8 +161,9 @@
     width: 100%;
 }
 
-.garden-mission-content h5:nth-child(1) {
-    font-style: italic;
+.garden-mission-content p{
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* End of Garden mission section */
