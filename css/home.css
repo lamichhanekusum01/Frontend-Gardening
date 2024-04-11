@@ -249,9 +249,9 @@
 }
 
 .garden-testimonial-box p {
-    text-align: left;
     height: 160px;
     overflow-y: auto;
+    text-align: justify;
 }
 
 .garden-testimonial-box>img {
