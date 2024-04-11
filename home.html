@@ -74,7 +74,8 @@
                                 </div>
                                 <div class="col">
                                     <div>
-                                        <i class="bi bi-suit-heart"></i>
+                                        <i id="heartIcon" class="bi bi-suit-heart"></i>
+
                                     </div>
                                 </div>
                                 <div class="col text-center">
@@ -558,11 +559,18 @@
     </footer>
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"ss
         crossorigin="anonymous"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        const heartIcon = document.getElementById('heartIcon');
 
+        heartIcon.addEventListener('click', function() {
+            // Toggle the filled class to change the heart icon to filled version
+            this.classList.toggle('filled-heart');
+        });
+    </script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript">
         $('.owl-carousel').owlCarousel({
