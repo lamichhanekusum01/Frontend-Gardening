@@ -106,7 +106,7 @@
 }
 .flip .card .face {
   -webkit-backface-visibility: hidden ;
-    backface-visibility: hidden ;s
+    backface-visibility: hidden ;
    z-index: 2;
 }
 .flip .card .front {
