@@ -78,8 +78,19 @@
                                     </div>
                                 </div>
                                 <div class="col text-center">
-                                    <div class="garden-user-box rounded-circle">B</div>
+                                    <div class="dropdown">
+                                        <div class="garden-user-box rounded-circle dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                            B
+                                        </div>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#" onclick="logout()">Logout</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -654,6 +665,7 @@ aria-hidden="true">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/slider.js"></script>
 <script>
     const productPurchase = document.getElementById('productPurchase');
     const servicePurchase = document.getElementById('servicePurchase');
@@ -698,23 +710,24 @@ aria-hidden="true">
     });
 </script>
  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript">
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2
-                },
-                1000: {
-                    items: 3
-                }
+    <script>
+        // Function to handle logout action
+        function logout() {
+            // Redirect to index.html
+            window.location.href = 'index.html';
+        }
+
+        // Code for preventing browser back functionality (same as before)
+        window.onload = function() {
+            if (window.history && window.history.pushState) {
+                window.history.pushState('forward', null, './#no-back');
+                window.onpopstate = function() {
+                    if (location.hash == '#no-back') {
+                        window.history.forward();
+                    }
+                };
             }
-        })
+        }
     </script>
 </body>
 

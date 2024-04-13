@@ -42,6 +42,10 @@
     color: #ffffff;
 }
 
+.dropdown-toggle::after {
+    display: none;
+}
+
 /* Footer */
 .garden-footer-border {
     border-bottom: 2px solid #eeeeee;
