@@ -60,7 +60,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex me-auto" role="search">
+                    <form class="d-flex me-auto" role="search" id="garden-search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="garden-search-btn btn" type="submit">Search</button>
                     </form>
@@ -541,33 +541,47 @@ aria-hidden="true">
     <!-- Footer -->
     <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary garden-footer">
         <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
-            <div class="row-cols-lg-2 row-cols-1 row garden-footer-border">
-                <div class="col">
+            <div class="row-cols-lg-2 row-cols-1 row garden-footer1">
+                <div class="col-lg-8">
                     <h2>Join the largest learning platform today!</h2>
-                    <p>Start learning with students around the world.</p>
-                    <div class="row-cols-lg-2 row-cols-1">
+                    <p>Start learning with experts around the world.</p>
+                    <div class="row row-cols-lg-2 row-cols-1">
                         <div class="col">
-                            <button type="button" class="btn garden-btn">Join Family <i
-                                    class="bi bi-arrow-right-short"></i></button>
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn garden-btn">Browse all Cousres <i
-                                    class="bi bi-arrow-right-short"></i></button>
+                            <button class="garden-button-color">
+                                Browse all Product
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="row-cols-lg-2 row-cols-1">
-                        <div>
-                            <img src="images/GraduationCap.jpg" alt="Footer Grdauation Cap">
+                <div class="col-lg-4">
+                    <div class="row row-cols-lg-2 row-cols-1">
+                        <div class="col">
+                            <div class="row garden-footer-icon">
+                                <div class="col">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                                <div class="col">
+                                    <h5>99+</h5>
+                                    <p>Products</p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <img src="images/VideoCamera.jpg" alt="Footer Video Camera">
+                        <div class="col">
+                            <div class="row garden-footer-icon">
+                                <div class="col">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <div class="col">
+                                    <h5>99+</h5>
+                                    <p>Products</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row mt-5 garden-footer-border">
+            <hr class="garden-footer-border">
+            <div class="row mt-5">
                 <div class="col-lg-3 mb-3">
                     <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none">
                         <div width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img">
@@ -630,15 +644,15 @@ aria-hidden="true">
                     </ul>
                 </div>
             </div>
-            <div class="row mt-5">
+            <hr class="garden-footer-border">
+            <div class="row mt-5 garden-footer3">
                 <div class="col">
                     <p>Copyright © 2023 Copyright garden++. All right reserved</p>
                 </div>
-                <div class="col-lg-1 col-3">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    <i class="fa fa-life-ring" aria-hidden="true"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="bi bi-facebook"></i>
+                <div class="col">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
@@ -662,6 +676,7 @@ aria-hidden="true">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 <script src="js/slider.js"></script>
 <script>
     const productPurchase = document.getElementById('productPurchase');
@@ -715,16 +730,16 @@ aria-hidden="true">
         }
 
         // Code for preventing browser back functionality (same as before)
-        window.onload = function() {
-            if (window.history && window.history.pushState) {
-                window.history.pushState('forward', null, './#');
-                window.onpopstate = function() {
-                    if (location.hash == '#') {
-                        window.history.forward();
-                    }
-                };
-            }
-        }
+        // window.onload = function() {
+        //     if (window.history && window.history.pushState) {
+        //         window.history.pushState('forward', null, './#no-back');
+        //         window.onpopstate = function() {
+        //             if (location.hash == '#no-back') {
+        //                 window.history.forward();
+        //             }
+        //         };
+        //     }
+        // }
     </script>
 </body>
 

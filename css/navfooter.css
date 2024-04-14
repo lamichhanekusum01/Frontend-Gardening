@@ -28,12 +28,13 @@
 .navbar-nav .nav-link:hover {
     color: #b1cc33;
 }
+
 .cart-icon:hover,
 #heartIcon:hover,
 .garden-user-box:hover {
     cursor: pointer;
-    transform: scale(1.1); /* Increase the size on hover */
-    transition: transform 0.2s ease; /* Add smooth transition */
+    transform: scale(1.1); 
+    transition: transform 0.2s ease; 
 }
 .garden-user-box {
     background-color: #b1cc33;
@@ -64,12 +65,69 @@
 .garden-btn {
     color: #B1CD27 !important;
     border: 1px solid #B1CD27 !important;
+}
 
+.garden-footer-icon div:nth-child(1) {
+    text-align: right;
+} 
+
+.garden-footer .fas {
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.garden-footer .fa-seedling {
+    background-color: #e9f8f3;
+    color: #12b46e;
+}
+
+.garden-footer .fa-video {
+    background-color: #f4fdc5;
+    color: #9eb81b;
+}
+
+.garden-footer1 {
+    margin-bottom: 3rem;
+}
+
+.garden-footer3 div:nth-child(2) {
+    text-align: right;
+}
+
+.garden-footer3 i {
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.garden-footer3 a:nth-child(1) {
+    color: #0866ff;
+}
+
+.garden-footer3 a:nth-child(2) {
+    color: red;
+}
+
+.garden-footer3 a:nth-child(3) {
+    color: #0077b5;
 }
 
 @media (max-width:600px) {
     .garden-user-box {
         margin: auto;
+    }
+    .garden-footer .fas {
+        font-size: medium;
+    }
+
+    .garden-footer-icon h5 {
+        font-size: small;
+    }
+    .garden-footer-icon p {
+        font-size: small;
+    }
+    .garden-footer3 div:nth-child(2) {
+        text-align: left;
     }
 }
 
