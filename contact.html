@@ -87,32 +87,155 @@
         </nav>
     </section>
 
-    <!-- <section>
+    <section class="garden-bgimg">
         <div class="container">
-            <div class="overlay"></div>
-            <img src="images/garden.jpg" alt="garden">
             <div class="top-text">
-                <p class="top-content">Contact</p>
+                <p class="top-content">Contact Us</p>
                 <div class="frame-27">
                     <p class="notation">Home > Contact</p>
                 </div>
-            </div>
-            
-        </div>
-       
-    </section> -->
-    <section class="garden-bgimg">
-
-        <div class="top-text">
-            <p class="top-content">Contact Us</p>
-            <div class="frame-27">
-                <p class="notation">Home > Contact</p>
             </div>
         </div>
 
         <div class="garden-bgimg-overlay"></div>
     </section>
+    <!-- <section>
+        <div class="container">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h2>FAQs</h2>
+                    <ul id="faq-list">
+                        <li class="faq-item">
+                            <div class="question">Question 1</div>
+                            <div class="answer">Answer 1</div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="question">Question 2</div>
+                            <div class="answer">Answer 2</div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="question">Question 3</div>
+                            <div class="answer">Answer 3</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h2>Business Hours</h2>
+                    <p>Monday - Friday: 9am - 5pm</p>
+                    <p>Saturday - Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h2>Business Hours</h2>
+                    <p>Monday - Friday: 9am - 5pm</p>
+                    <p>Saturday - Sunday: Closed</p>
+                </div>
+                <div class="grid-item">
+                    <h2>Social Media & Location</h2>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                    <p>Location: Your Address</p>
+                </div>
+            </div>
+        </div>
+    </section>
+ -->
+ <section class="map margint-110">
+    <div class="container">
+        <h2>Have question about our services?</h2>
+        <p class="map-p">For any kind of inquiries, directly email us or contact us with our phone number.</p>
+        <div class="map-container">
+            <div class="map-contact-left">
+                <p><span>Hours of operation :</span> Mon - Fri (9AM - 5PM)</p>
+                <p>23 Florina Blvd, Toronto,CA</p>
+                <p>+4(009)265-7612</p>
+                <p>mail@contact.com</p>
+                <p><span>or get in touch!</span></p>
+                <div>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <p><span>Email or call us directly!</span></p>
+                <div class="frame-21">
+                    <div id="frame-35" class="frame-35">
+                        <img class="img-2" src="images/Vector (1).png">
+                        <div class="text-wrapper-19">Call us directly!</div>
+                      </div>
+                    <div class="frame-36">
+                        <img class="img-2" src="images/contactmail.png">
+                        <div class="text-wrapper-13">Email Now</div>
+                    </div>
+                </div>
 
+            </div>
+            <div class="map-contact-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.90977213185!2d-79.54286771171974!3d43.718370958239184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1702268733540!5m2!1sen!2sca"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="margint-110 form map-form">
+    <div class="container">
+        <div class="frame-17">
+            <div class="appoinment-form">
+                <div class="title">
+                    <p class="meet-with-clients-an-2">Submit us your inquiries!</p>
+                </div>
+                <form class="form" action="" method="post">
+                    <div class="form-2">
+                        <div class="content-3">
+                            <input placeholder="Full Name" type="text" required>
+                            <input placeholder="Email Address" type="email" required>
+                            <input placeholder="Phone Number" type="tel" required>
+                            <textarea rows="10" cols="67" id="message" name="message"
+                                placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="submit">
+                            <button type="submit" onclick="submitForm()">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="FAQ">
+                <div class="title-2">
+                    <div class="faq">Frequently asked Questions</div>
+                    <span>(Click question for the answer)</span>
+                </div>
+                <div class="form-2">
+                    <div class="element" onclick="toggleAnswer(this)">
+                        <div class="question">Is this service legit?</div>
+                        <div class="answer">Yes, it is a legit service we are providing since last 3 years.</div>
+                    </div>
+                    <div class="element" onclick="toggleAnswer(this)">
+                        <div class="question">Do you offer Discounts?</div>
+                        <div class="answer">Yes, we offer discounts based on the products you are looking for.
+                            Please
+                            contact us for more details.</div>
+                    </div>
+                    <div class="element" onclick="toggleAnswer(this)">
+                        <div class="question">Do we have to pay to the service providers who come to our houses for
+                            garden
+                            designing or any other services?</div>
+                        <div class="answer">No, you have to place your order and you will get a bill where
+                            everything is
+                            included. We will pay from that to our workers.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
