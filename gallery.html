@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/navfooter.css">
+    <link rel="stylesheet" href="css/gallery.css">
 
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 </head>
@@ -34,7 +35,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
@@ -46,13 +47,17 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Gallery
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="gallery.html">Photos</a></li>
                                 <li><a class="dropdown-item" href="#">Videos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -201,343 +206,80 @@
         <div class="garden-bgimg-overlay"></div>
     </section>
 
-    <section class="garden-mission garden-m-t">
+    <section class="garden-gallery garden-p-tb">
         <div class="container">
-            <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
-                <div class="col">
-                    <img src="images/image1.jpg" alt="Garden Mission">
+            <div class="gallery">
+                <div class="tabs">
+                  <button class="tab" onclick="filterSelection('all')">All</button>
+                  <button class="tab" onclick="filterSelection('flower')">Flower</button>
+                  <button class="tab" onclick="filterSelection('vegetable')">Vegetable Plant</button>
+                  <button class="tab" onclick="filterSelection('service')">Service</button>
+                  <button class="tab" onclick="filterSelection('video')">Video</button>
                 </div>
-                <div class="col">
-                    <div class="garden-mission-content">
-                        <h4 class="garden-subtitle-h4">Mission & Story</h4>
-                        <h2>Bringing nature's beauty to your doorstep</h2>
-                        <p>
-                            At the heart of Gardenworks, we are passionate about bringing nature's beauty to your
-                            doorstep. With a deep-rooted love for gardens and a commitment to excellence, we have
-                            cultivated a reputation
-                            as a leading gardening service dedicated to transforming outdoor spaces into flourishing
-                            heavens.
-                        </p>
-                        <p>
-                            At the heart of Gardenworks, is a mission to create and maintain stunning gardens that
-                            enhance the well-being of our clients and contribute to the beauty of our community.
-                        </p>
-                        <p>
-                            We believe that a well-designed and cared for garden is more than just a collection of
-                            plants. It's a living work of art that brings joy, peace, and a touch of nature to your
-                            life.
-                        </p>
-                        <h5>Nepali Girls</h5>
-                        <h5 class="garden-italic">Founder of Garden Works</h5>
-                    </div>
+              
+                <div class="images">
+                  <div class="image filterDiv flower">
+                    <img src="images/flower1.jpg" alt="Flower 1">
+                  </div>
+                  <div class="image filterDiv vegetable">
+                    <img src="images/vegetable1.jpg" alt="Vegetable Plant 1">
+                  </div>
+                  <div class="image filterDiv service">
+                    <img src="images/services1.jpg" alt="Service 1">
+                  </div>
+                  <div class="image filterDiv video">
+                    <video controls>
+                      <source src="images/video.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div class="image filterDiv flower">
+                    <img src="images/flower2.jpg" alt="Flower 1">
+                  </div>
+                  <div class="image filterDiv flower">
+                    <img src="images/flower3.jpg" alt="Flower 1">
+                  </div>
+                  <div class="image filterDiv vegetable">
+                    <img src="images/vegetable2.jpg" alt="Vegetable Plant 1">
+                  </div>
+                  <div class="image filterDiv flower">
+                    <img src="images/flower4.jpg" alt="Flower 1">
+                  </div>
+                  <div class="image filterDiv vegetable">
+                    <img src="images/vegetable4.jpg" alt="Vegetable Plant 1">
+                  </div>
+                  <div class="image filterDiv service">
+                    <img src="images/services3.jpg" alt="Service 1">
+                  </div>
+                  <div class="image filterDiv video">
+                    <video controls>
+                      <source src="images/video.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div class="image filterDiv flower">
+                    <img src="images/flower6.jpg" alt="Flower 1">
+                  </div>
+                  <div class="image filterDiv vegetable">
+                    <img src="images/vegetable5.jpg" alt="Vegetable Plant 1">
+                  </div>
+                  <div class="image filterDiv service">
+                    <img src="images/services5.png" alt="Service 1">
+                  </div>
+                  <div class="image filterDiv flower">
+                    <img src="images/flower7.jpg" alt="Flower 1">
+                  </div>
+                  <div class="image filterDiv vegetable">
+                    <img src="images/vegetable4.jpg" alt="Vegetable Plant 1">
+                  </div>
+                  <div class="image filterDiv video">
+                    <video controls>
+                      <source src="images/video.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="garden-services garden-m-t garden-p-tb">
-        <div class="container text-center">
-            <h4 class="garden-section-topic garden-subtitle-h4">Services</h4>
-            <h3 class="garden-p-t">
-                <img src="images/logo.png" alt="Services">
-                GardenWorks Services
-            </h3>
-            <p>At the heart of Gardenworks is a mission to create and maintain stunning gardens that enhance the
-                well-being of our clients and contribute to the beauty of our community.</p>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 g-lg-3">
-                <div class="col">
-                    <div class="p-3 garden-services-box">
-                        <img src="images/services1.jpg" alt="Services for planting">
-                        <div class="garden-services-textbox">
-                            <h5>Plant Care and Health</h5>
-                            <p>From soil analysis to pest control, we provide comprehensive care to ensure your plants
-                                thrive.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-3 garden-services-box">
-                        <img src="images/services1.jpg" alt="Services for planting">
-                        <div class="garden-services-textbox">
-                            <h5>Plant Care and Health</h5>
-                            <p>From soil analysis to pest control, we provide comprehensive care to ensure your plants
-                                thrive.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-3 garden-services-box">
-                        <img src="images/services1.jpg" alt="Services for planting">
-                        <div class="garden-services-textbox">
-                            <h5>Plant Care and Health</h5>
-                            <p>From soil analysis to pest control, we provide comprehensive care to ensure your plants
-                                thrive.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-3 garden-services-box">
-                        <img src="images/services1.jpg" alt="Services for planting">
-                        <div class="garden-services-textbox">
-                            <h5>Plant Care and Health</h5>
-                            <p>From soil analysis to pest control, we provide comprehensive care to ensure your plants
-                                thrive.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-3 garden-services-box">
-                        <img src="images/services1.jpg" alt="Services for planting">
-                        <div class="garden-services-textbox">
-                            <h5>Plant Care and Health</h5>
-                            <p>From soil analysis to pest control, we provide comprehensive care to ensure your plants
-                                thrive.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-3 garden-services-box">
-                        <img src="images/services1.jpg" alt="Services for planting">
-                        <div class="garden-services-textbox">
-                            <h5>Plant Care and Health</h5>
-                            <p>From soil analysis to pest control, we provide comprehensive care to ensure your plants
-                                thrive.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="garden-about garden-m-t">
-        <div class="container text-center">
-            <h4 class="garden-section-topic garden-subtitle-h4">About GardenWorks</h4>
-            <p class="garden-p-t">Explore our featured courses, connect with a community of learners, and embark on a
-                journey of lifelong
-                learning. Whether you're a beginner or an expert, there's something for everyone at GardenWorks.
-            </p>
-            <div class="garden-about-video">
-                <video controls="" autoplay="" name="media">
-                    <source src="images/video.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </section>
-
-    <section class="garden-testimonial garden-m-t garden-p-tb">
-        <div class="container">
-            <h4 class="garden-subtitle-h4">Testimonial</h4>
-            <h3 class="garden-p-t">Hear from our Satisfied Clients</h3>
-            <p class="garden-p-color garden-testimonial-p">At BrandScape, we take immense pride in the success stories
-                of our clients, whose
-                experiences speak volumes about the quality and impact of our services.</p>
-            <div class="container text-center">
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="garden-testimonial-box">
-                            <img src="images/greencomma.png" alt="comma">
-                            <p>Working with GardenWorks has been nothing short of transformative for our business. Their
-                                strategic insights and innovative approach to garden development helped us redefine our
-                                identity in a crowded market.
-                            </p>
-                            <div class="row">
-                                <div class="col-3">
-                                    <img src="images/test1.jpg" alt="Testimonial">
-                                </div>
-                                <div class="col-6">
-                                    <h5>Lexi Robe</h5>
-                                    <h6>Student</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="garden-testimonial-box">
-                            <img src="images/greencomma.png" alt="comma">
-                            <p>Working with GardenWorks has been nothing short of transformative for our business. Their
-                                strategic insights and innovative approach to garden development helped us redefine our
-                                identity in a crowded market.
-                            </p>
-                            <div class="row">
-                                <div class="col-3">
-                                    <img src="images/test2.jpg" alt="Testimonial">
-                                </div>
-                                <div class="col-6">
-                                    <h5>Lexi Robe</h5>
-                                    <h6>Student</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="garden-testimonial-box">
-                            <img src="images/greencomma.png" alt="comma">
-                            <p>Working with GardenWorks has been nothing short of transformative for our business. Their
-                                strategic insights and innovative approach to garden development helped us redefine our
-                                identity in a crowded market.
-                            </p>
-                            <div class="row">
-                                <div class="col-3">
-                                    <img src="images/test3.jpg" alt="Testimonial">
-                                </div>
-                                <div class="col-6">
-                                    <h5>Lexi Robe</h5>
-                                    <h6>Student</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="garden-testimonial-box">
-                            <img src="images/greencomma.png" alt="comma">
-                            <p>Working with GardenWorks has been nothing short of transformative for our business. Their
-                                strategic insights and innovative approach to garden development helped us redefine our
-                                identity in a crowded market.
-                            </p>
-                            <div class="row">
-                                <div class="col-3">
-                                    <img src="images/test4.jpg" alt="Testimonial">
-                                </div>
-                                <div class="col-6">
-                                    <h5>Lexi Robe</h5>
-                                    <h6>Student</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="garden-testimonial-box">
-                            <img src="images/greencomma.png" alt="comma">
-                            <p>Working with GardenWorks has been nothing short of transformative for our business. Their
-                                strategic insights and innovative approach to garden development helped us redefine our
-                                identity in a crowded market.
-                            </p>
-                            <div class="row">
-                                <div class="col-3">
-                                    <img src="images/test5.jpg" alt="Testimonial">
-                                </div>
-                                <div class="col-6">
-                                    <h5>Lexi Robe</h5>
-                                    <h6>Student</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="garden-testimonial-box">
-                            <img src="images/greencomma.png" alt="comma">
-                            <p>Working with GardenWorks has been nothing short of transformative for our business. Their
-                                strategic insights and innovative approach to garden development helped us redefine our
-                                identity in a crowded market.
-                            </p>
-                            <div class="row">
-                                <div class="col-3">
-                                    <img src="images/test6.jpg" alt="Testimonial">
-                                </div>
-                                <div class="col-6">
-                                    <h5>Lexi Robe</h5>
-                                    <h6>Student</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="garden-testimonial-box">
-                            <img src="images/greencomma.png" alt="comma">
-                            <p>Working with GardenWorks has been nothing short of transformative for our business. Their
-                                strategic insights and innovative approach to garden development helped us redefine our
-                                identity in a crowded market.
-                            </p>
-                            <div class="row">
-                                <div class="col-3">
-                                    <img src="images/test7.jpg" alt="Testimonial">
-                                </div>
-                                <div class="col-6">
-                                    <h5>Lexi Robe</h5>
-                                    <h6>Student</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="garden-story garden-p-tb">
-        <div class="container text-center">
-            <div class="garden-story-content">
-                <h4 class="garden-section-topic garden-subtitle-h4">Our Story</h4>
-                <p class="garden-p-t">
-                    Founded in 1995, Gardenworks has grown from a small local venture to a thriving business serving
-                    locally
-                    and beyond. Our journey began with a simple belief - that everyone deserves a green and vibrant
-                    space to
-                    connect with nature.
-                </p>
-                <button class="garden-button-color">
-                    Contact Us
-                </button>
-                <button class="garden-button-wcolor">
-                    See our Prospectus
-                </button>
-            </div>
-
-        </div>
-        <div class="garden-bgimg-overlay"></div>
-    </section>
-
-    <section class="garden-blog garden-m-t">
-        <div class="container text-center">
-            <h4 class="garden-section-topic garden-subtitle-h4">GardenWorks Blog</h4>
-            <p class="garden-p-t">Explore our featured courses, connect with a community of learners, and embark on a
-                journey of lifelong
-                learning. Whether you're a beginner or an expert, there's something for everyone at GardenWorks.
-            </p>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 g-lg-3">
-                <div class="col">
-                    <div class="p-3 garden-services-box">
-                        <img src="images/services1.jpg" alt="Services for planting">
-                        <div class="garden-services-textbox">
-                            <span>April 14, 2024 - Ram Bahadur</span>
-                            <h5>Plant Care and Health</h5>
-                            <p>From soil analysis to pest control, we provide comprehensive care to ensure your plants
-                                thrive.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-3 garden-services-box">
-                        <img src="images/services1.jpg" alt="Services for planting">
-                        <div class="garden-services-textbox">
-                            <span>April 14, 2024 - Ram Bahadur</span>
-                            <h5>Plant Care and Health</h5>
-                            <p>From soil analysis to pest control, we provide comprehensive care to ensure your plants
-                                thrive.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-3 garden-services-box">
-                        <img src="images/services1.jpg" alt="Services for planting">
-                        <div class="garden-services-textbox">
-                            <span>April 14, 2024 - Ram Bahadur</span>
-                            <h5>Plant Care and Health</h5>
-                            <p>From soil analysis to pest control, we provide comprehensive care to ensure your plants
-                                thrive.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              </div>            
         </div>
     </section>
 
@@ -725,6 +467,7 @@
         });
     </script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
     <script>
         // Function to handle logout action
         function logout() {
