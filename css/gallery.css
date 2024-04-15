@@ -1,6 +1,7 @@
 /*Start of Top content*/
 .garden-bgimg {
     background-image: url(../images/flower1.jpg);
+    min-height: 380px;
 }
 
 .garden-gallery {
