@@ -1,3 +1,8 @@
+/*Start of Top content*/
+.garden-bgimg {
+    background-image: url(../images/flower1.jpg);
+}
+
 .garden-gallery {
     background-color: #f1f3f8;
 }
