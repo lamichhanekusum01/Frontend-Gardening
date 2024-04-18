@@ -1900,3 +1900,29 @@ button:hover {
 .top-navbar {
     background-color: bisque;
 }
+
+
+/* search list */
+.search-container {
+    position: relative; /* Contains the dropdown within the component */
+}
+
+.suggestions-dropdown {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%; /* Directly below the input */
+    left: 0;
+    width: 100%; /* Match the width of the search input */
+    background-color: #fff; /* Light background for visibility */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Optional: adds shadow for dropdown */
+    z-index: 1000; /* Ensures it floats above other content */
+}
+
+.suggestions-dropdown div {
+    padding: 10px;
+    cursor: pointer; /* Indicates it's selectable */
+}
+
+.suggestions-dropdown div:hover {
+    background-color: #f1f1f1; /* Light grey background on hover */
+}

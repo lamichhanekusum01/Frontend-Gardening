@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/navfooter.css">
-
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 </head>
 
 <body>
+    <!-- nav bar ends here -->
     <section class="top-navbar">
         <nav class="navbar navbar-expand-lg vanish-navbar">
             <div class="container">
@@ -34,10 +34,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link active" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="service.html">Services</a>
@@ -56,10 +56,16 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex me-auto" role="search" id="garden-search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="garden-search-btn btn" type="submit">Search</button>
-                    </form>
+                    <div class="search-container" style="position: relative;">
+                        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search services..."
+                            aria-label="Search" oninput="searchServices()">
+                        <div id="searchSuggestions" class="suggestions-dropdown"
+                            style="display: none; position: absolute; width: 100%; background-color: white; z-index: 1000;">
+                            <!-- Suggestions will appear here -->
+                        </div>
+
+                    </div>
+                    <!-- wishlist, cart and profile -->
                     <div>
                         <div class="container text-center">
                             <div class="row row-cols-1 row-cols-lg-3 ms-auto garden-navbar-icon">
@@ -92,84 +98,9 @@
             </div>
         </nav>
     </section>
+    <!-- navbar ends here -->
 
-    <!-- Modal -->
-    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header bg-success text-white">
-                    <h5 class="modal-title" id="cartModalLabel">Gardening Cart</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form id="cartForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Your Phone Number</label>
-                            <input type="text" class="form-control" id="phone" name="phone" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="address">Delivery Address</label>
-                            <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Select Purchase Type</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="purchaseType" id="productPurchase"
-                                    value="product" required>
-                                <label class="form-check-label" for="productPurchase">Buy Product</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="purchaseType" id="servicePurchase"
-                                    value="service" required>
-                                <label class="form-check-label" for="servicePurchase">Buy Service</label>
-                            </div>
-                        </div>
-
-                        <div id="productSelection" style="display: none;">
-                            <div class="form-group">
-                                <label for="product">Select Product</label>
-                                <select class="form-control" id="product" name="product">
-                                    <option value="rose">Rose ($10)</option>
-                                    <option value="tulip">Tulip ($8)</option>
-                                    <option value="sunflower">Sunflower ($6)</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div id="serviceSelection" style="display: none;">
-                            <div class="form-group">
-                                <label for="service">Select Gardening Service</label>
-                                <select class="form-control" id="service" name="service">
-                                    <option value="lawn-mowing">Lawn Mowing ($50)</option>
-                                    <option value="weed-control">Weed Control ($30)</option>
-                                    <option value="planting">Planting ($20)</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-success" id="addToCartBtn">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Modal from js -->
 
 
 
@@ -541,209 +472,37 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary garden-footer">
-        <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
-            <div class="row-cols-lg-2 row-cols-1 row garden-footer1">
-                <div class="col-lg-8">
-                    <h2>Join the largest learning platform today!</h2>
-                    <p>Start learning with experts around the world.</p>
-                    <div class="row row-cols-lg-2 row-cols-1">
-                        <div class="col">
-                            <button class="garden-button-color">
-                                Browse all Product
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="row row-cols-lg-2 row-cols-1">
-                        <div class="col">
-                            <div class="row garden-footer-icon">
-                                <div class="col">
-                                    <i class="fas fa-seedling"></i>
-                                </div>
-                                <div class="col">
-                                    <h5>10</h5>
-                                    <p>Products</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="row garden-footer-icon">
-                                <div class="col">
-                                    <i class="fas fa-video"></i>
-                                </div>
-                                <div class="col">
-                                    <h5>12</h5>
-                                    <p>Videos</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr class="garden-footer-border">
-            <div class="row mt-5">
-                <div class="col-lg-3 mb-3">
-                    <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none">
-                        <div width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img">
-                            <img src="images/logo.png" alt="Footer Logo">
-                        </div>
-                        <span class="fs-5">GardenWorks</span>
-                    </a>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2">
-                            We believe that a well-designed and cared-for garden is more than just a collection of
-                            plants - it's a living work of art that brings joy, peace, and a touch of nature to your
-                            life.
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Menu</a></li>
-                        <li class="mb-2"><a href="#">Get an App</a></li>
-                        <li class="mb-2"><a href="#">Business</a></li>
-                        <li class="mb-2"><a href="#">About us</a></li>
-                        <li class="mb-2"><a href="#">Tech on garden++</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2 mb-3">
-                    <h5>Services</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Content Strategy</a></li>
-                        <li class="mb-2"><a href="#">Content Development</a></li>
-                        <li class="mb-2"><a href="#">Content Creation</a></li>
-                        <li class="mb-2"><a href="#">Content Optimization</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2 mb-3">
-                    <h5>Company</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Site Map</a></li>
-                        <li class="mb-2"><a href="#">Terms of Use</a></li>
-                        <li class="mb-2"><a href="#">Privacy Notice</a></li>
-                        <li class="mb-2"><a href="#">Cookies</a></li>
-                        <li class="mb-2"><a href="#">Modern Slavery</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2 mb-3">
-                    <h5>Contact</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <span>Call Us</span><br>
-                            <a href="#">+1 123 112 0211</a>
-                        </li>
-                        <li class="mb-2">
-                            <span>Mail Us</span><br>
-                            <a href="#">Info@Example.com</a>
-                        </li>
-                        <li class="mb-2">
-                            <span>Mail Us</span><br>
-                            <a href="#">Amsterdam, 109</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="garden-footer-border">
-            <div class="row mt-5 garden-footer3">
-                <div class="col">
-                    <p>Copyright © 2023 Copyright garden++. All right reserved</p>
-                </div>
-                <div class="col">
-                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+  
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" ss
         crossorigin="anonymous"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        const heartIcon = document.getElementById('heartIcon');
+   <script src="js/script.js"></script>
 
-        heartIcon.addEventListener('click', function () {
-            // Toggle the filled class to change the heart icon to filled version
-            this.classList.toggle('filled-heart');
-        });
-    </script>
 
-    <!-- Include Bootstrap JS library -->
+ <!-- scripts start here -->
+    <!-- Load jQuery first if needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Bundle JS (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/slider.js"></script>
-    <script>
-        const productPurchase = document.getElementById('productPurchase');
-        const servicePurchase = document.getElementById('servicePurchase');
-        const productSelection = document.getElementById('productSelection');
-        const serviceSelection = document.getElementById('serviceSelection');
 
-        productPurchase.addEventListener('change', function () {
-            if (this.checked) {
-                productSelection.style.display = 'block';
-                serviceSelection.style.display = 'none';
-            }
-        });
-
-        servicePurchase.addEventListener('change', function () {
-            if (this.checked) {
-                productSelection.style.display = 'none';
-                serviceSelection.style.display = 'block';
-            }
-        });
-
-        const addToCartBtn = document.getElementById('addToCartBtn');
-        addToCartBtn.addEventListener('click', function (event) {
-            const form = document.getElementById('cartForm');
-            if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-                form.classList.add('was-validated');
-            } else {
-                event.preventDefault();
-                const formData = new FormData(form);
-                const purchaseType = formData.get('purchaseType');
-                if (purchaseType === 'product') {
-                    const product = formData.get('product');
-                    alert(`Added ${product} to cart!`);
-                } else if (purchaseType === 'service') {
-                    const service = formData.get('service');
-                    alert(`Added ${service} to cart!`);
-                }
-                // Redirect to home.html after adding to cart
-                window.location.href = 'home.html';
-            }
-        });
-    </script>
+    <!-- Owl Carousel, if used -->
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script>
-        // Function to handle logout action
-        function logout() {
-            // Redirect to index.html
-            window.location.href = 'index.html';
-        }
 
-        // Code for preventing browser back functionality (same as before)
-        // window.onload = function() {
-        //     if (window.history && window.history.pushState) {
-        //         window.history.pushState('forward', null, './#no-back');
-        //         window.onpopstate = function() {
-        //             if (location.hash == '#no-back') {
-        //                 window.history.forward();
-        //             }
-        //         };
-        //     }
-        // }
-    </script>
+    <!-- Your custom scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/search.js"></script>
+    <!-- script ends here -->
 </body>
 
 </html>
