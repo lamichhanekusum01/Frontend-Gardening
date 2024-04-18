@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // featured servieces
 document.addEventListener('DOMContentLoaded', function() {
     const slidesData = [
-        { seed: 'bdoo', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quod.' },
+        { seed: 'bdoo', text: 'Optimizing your soil for better growth and yield is the primary goal of this service, which can help you get the most out of your garden ' },
         { seed: 'kek', text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur sed repellendus voluptates hic ha, asdf.' },
         { seed: 'top', text: 'Lorem ipsum dolor sit amet consectet elit. Aut quod.' },
         { seed: 'apa', text: 'Lorem ipsum dolor sit elit. Provident e molestiae corrupti corporis odit cupiditate.' },
@@ -57,11 +57,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const article = document.createElement('article');
             article.className = 'slide__text';
 
-            const h2 = document.createElement('h2');
-            h2.textContent = slide.text;
+            const p = document.createElement('p');
+            p.textContent = slide.text;
 
             figure.appendChild(img);
-            article.appendChild(h2);
+            article.appendChild(p);
             slideDiv.appendChild(figure);
             slideDiv.appendChild(article);
 
