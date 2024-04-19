@@ -234,17 +234,20 @@
         </form>
     </div>
 
-    <!-- Sign In -->
-    <div class="container__form container--signin">
-        <form action="#" class="form" id="form2">
-            <h2 class="form__title">Sign In</h2>
-            <input type="email" id="username" placeholder="Email" class="input" />
-            <input type="password" id="password" placeholder="Password" class="input" autocomplete="current-password">
+   <!-- Sign In -->
+<div class="container__form container--signin">
+    <form action="#" class="form" id="form2">
+        <h2 class="form__title">Sign In</h2>
+        <!-- Add autocomplete="username" to the username input -->
+        <input type="email" id="username" placeholder="Email" class="input" autocomplete="username">
+        <!-- Add autocomplete="current-password" to the password input -->
+        <input type="password" id="password" placeholder="Password" class="input" autocomplete="current-password">
 
-            <a href="#" class="link">Forgot your password?</a>
-            <button id="loginBtn" class="btn">Sign In</button>
-        </form>
-    </div>
+        <a href="#" class="link">Forgot your password?</a>
+        <button id="loginBtn" class="btn">Sign In</button>
+    </form>
+</div>
+
 
     <!-- Overlay -->
     <div class="container__overlay">
@@ -259,37 +262,33 @@
     </div>
 </div>
 
-<script>
-    // Get necessary elements
-    const signInBtn = document.getElementById("signIn");
-    const signUpBtn = document.getElementById("signUp");
-    const container = document.querySelector(".container");
-    const loginBtn = document.getElementById("loginBtn");
-    const usernameInput = document.getElementById("username");
-    const passwordInput = document.getElementById("password");
 
+
+<script>
     // Function to handle sign in button click
-    signInBtn.addEventListener("click", () => {
-        container.classList.remove("right-panel-active");
+    document.getElementById("signIn").addEventListener("click", () => {
+        document.querySelector(".container").classList.remove("right-panel-active");
     });
 
     // Function to handle sign up button click
-    signUpBtn.addEventListener("click", () => {
-        container.classList.add("right-panel-active");
+    document.getElementById("signUp").addEventListener("click", () => {
+        document.querySelector(".container").classList.add("right-panel-active");
     });
 
     // Function to handle login button click
-    loginBtn.addEventListener("click", () => {
-        const username = usernameInput.value;
-        const password = passwordInput.value;
+    document.getElementById("loginBtn").addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent the form from submitting
 
-        // Check if the username and password are valid
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        // Check if the username and password are correct
         if (username === 'garden@email.com' && password === 'garden') {
-            // Redirect to the home page
-            window.location.href = './home.html'; // Adjust the path as necessary
+            // Redirect to home.html
+            window.location.href = './home.html';
         } else {
-            // Display error message or handle invalid login
-            alert("Invalid username or password!");
+            // Display error message
+            alert("Email or password is wrong.");
         }
     });
 </script>
