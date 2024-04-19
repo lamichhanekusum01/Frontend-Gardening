@@ -24,6 +24,7 @@
     background-color: #fff;
    
 }
+
 .flip .card .face {
   -webkit-backface-visibility: hidden ;
     backface-visibility: hidden ;
@@ -54,4 +55,120 @@
 .inner{
   margin:0px !important;
   width: 270px;
+}
+.garden-subtitle-h4 {
+  background-color: #edffd3;
+  color: #69a911;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  width: fit-content;
+}
+/* Specials Section */
+.section-specials {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+}
+button {
+    border: 1px #69a911 solid;
+    color: #ffffff;
+    border-radius: 30%;
+    width: fit-content;
+    padding: 10px;
+    background-color: transparent;
+}
+
+/* Change button color on hover */
+button:hover {
+  background-color: #69a911; /* Color on hover */
+}
+#specials h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+  color: #333;
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.plan-box:hover {
+  transform: translateY(-5px);
+}
+
+.plan-box h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.plan-price {
+  font-size: 36px;
+  color: #69a911;
+  margin-bottom: 10px;
+}
+
+.plan-price span {
+  font-size: 18px;
+  color: #333;
+}
+
+.plan-price-meal {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.plan-icons {
+  color: #69a911;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #69a911;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #4c7d0e;
+}
+
+/* Garden Services Section */
+.garden-services {
+  padding: 4rem 0;
+}
+
+.garden-services h3 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.garden-services p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .garden-services h3 {
+    font-size: 24px;
+  }
+
+  .garden-services p {
+    font-size: 16px;
+  }
 }
