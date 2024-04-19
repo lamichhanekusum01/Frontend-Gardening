@@ -1,6 +1,6 @@
 .garden-bgimg {
-    background-image: url(../images/aboutcover.jpg);
-    min-height: 380px;
+    background-image: url(../images/aboutcover.jpg) !important;
+    min-height: 380px !important;
 }
 
 .garden-about-story {

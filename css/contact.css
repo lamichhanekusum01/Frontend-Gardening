@@ -1,7 +1,7 @@
 /*Start of Top content*/
 .garden-bgimg {
-    background-image: url(../images/garden.jpg);
-    min-height: 380px;
+    background-image: url(../images/contactbg.jpg) !important;
+    min-height: 380px !important;
 }
 
 .top-text {
