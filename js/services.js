@@ -141,12 +141,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     createTestimonials(testimonials);
 
-    // Initialize the Owl Carousel
-    $(document).ready(function(){
+      // Initialize the Owl Carousel
+      $(document).ready(function(){
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,
             nav: true,
+            autoplay: true, // Enables automatic sliding
+            autoplayTimeout: 1000, // Slides change every 1000 milliseconds (1 second)
             responsive: {
                 0: {
                     items: 1

@@ -129,6 +129,35 @@
     .garden-footer3 div:nth-child(2) {
         text-align: left;
     }
+
+ .garden-navbar-icon {
+        display: flex;
+        flex-direction: row;
+  
+    }
+
+    /* Ensure dropdown is aligned right under user icon */
+    .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
+
+    /* Adjust the display of navbar brand and toggle */
+    .navbar-brand {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    /* Center the navbar links and ensure they take full width */
+    .navbar-nav {
+        flex-grow: 1;
+        justify-content: center;
+    }
+
 }
 
 @media only screen and (max-device-width: 1600px) {

@@ -1,117 +1,35 @@
 
-const registerBtn = document.querySelector('.modal-button');
-const submitBtn = document.querySelector('.submit-button');
-const closeBtn = document.querySelector('.close-modal');
-const container = document.querySelector('.center-container');
-const overlay = document.querySelector('.overlay');
-const form = document.querySelector('form');
-const name = document.getElementById('name');
-const submittedText = document.querySelector('.submitted-text');
-const span = document.querySelector('span');
-// hearticon
-const heartIcon = document.getElementById('heartIcon');
-heartIcon.addEventListener('click', function () {
-    // Toggle the filled class to change the heart icon to filled version
-    this.classList.toggle('filled-heart');
+//for the homepage's mission story
+document.addEventListener('DOMContentLoaded', function () {
+    // Content variables
+    const missionData = {
+        title: "Mission & Story",
+        heading: "Bringing nature's beauty to your doorstep",
+        paragraphs: [
+            "At the heart of Gardenworks, we are passionate about bringing nature's beauty to your doorstep. With a deep-rooted love for gardens and a commitment to excellence, we have cultivated a reputation as a leading gardening service dedicated to transforming outdoor spaces into flourishing heavens.",
+            "At the heart of Gardenworks, is a mission to create and maintain stunning gardens that enhance the well-being of our clients and contribute to the beauty of our community.",
+            "We believe that a well-designed and cared for garden is more than just a collection of plants. It's a living work of art that brings joy, peace, and a touch of nature to your life."
+        ],
+        footer: "Nepali Girls",
+        footerItalic: "Founder of Garden Works"
+    };
+
+    // Select the target element
+    const missionContent = document.getElementById('missionContent');
+
+    // Create the HTML content
+    const htmlContent = `
+        <div class="garden-mission-content">
+            <h4 class="garden-subtitle-h4">${missionData.title}</h4>
+            <h2>${missionData.heading}</h2>
+            ${missionData.paragraphs.map(p => `<p>${p}</p>`).join('')}
+            <h5>${missionData.footer}</h5>
+            <h5 class="garden-italic">${missionData.footerItalic}</h5>
+        </div>
+    `;
+
+    // Inject the content into the DOM
+    missionContent.innerHTML = htmlContent;
+
+
 });
-const submitComplete = () => {
-    let storeName = '';
-
-    if(name.value === '') {
-        storeName = 'Tester';
-    } else {
-        storeName = name.value;
-    }
-
-    form.style.display = 'none';
-    submitBtn.style.display = 'none';
-    submittedText.style.display = 'block';
-    span.innerText = storeName;
-}
-
-const closeModal = () => {
-    overlay.style.display = 'none';
-    container.style.display = 'none';
-    submittedText.style.display = 'none';
-    form.style.display = 'flex';
-    submitBtn.style.display = 'block';
-    name.value = '';
-    storeName = '';
-}
-
-submitBtn.addEventListener('click', submitComplete)
-registerBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    overlay.style.display = 'block';
-    container.style.display = 'flex';
-})
-
-
-// nav bar 
-const productPurchase = document.getElementById('productPurchase');
-const servicePurchase = document.getElementById('servicePurchase');
-const productSelection = document.getElementById('productSelection');
-const serviceSelection = document.getElementById('serviceSelection');
-
-productPurchase.addEventListener('change', function () {
-    if (this.checked) {
-        productSelection.style.display = 'block';
-        serviceSelection.style.display = 'none';
-    }
-});
-
-servicePurchase.addEventListener('change', function () {
-    if (this.checked) {
-        productSelection.style.display = 'none';
-        serviceSelection.style.display = 'block';
-    }
-});
-
-const addToCartBtn = document.getElementById('addToCartBtn');
-addToCartBtn.addEventListener('click', function (event) {
-    const form = document.getElementById('cartForm');
-    if (form.checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
-        form.classList.add('was-validated');
-    } else {
-        event.preventDefault();
-        const formData = new FormData(form);
-        const purchaseType = formData.get('purchaseType');
-        if (purchaseType === 'product') {
-            const product = formData.get('product');
-            alert(`Added ${product} to cart!`);
-        } else if (purchaseType === 'service') {
-            const service = formData.get('service');
-            alert(`Added ${service} to cart!`);
-        }
-        // Redirect to home.html after adding to cart
-        window.location.href = 'home.html';
-    }
-});
-
-
- // Function to handle logout action
- function logout() {
-    // Redirect to index.html
-    window.location.href = 'index.html';
-}
-
-
-
-
-
-// Code for preventing browser back functionality (same as before)
-// window.onload = function() {
-//     if (window.history && window.history.pushState) {
-//         window.history.pushState('forward', null, './#no-back');
-//         window.onpopstate = function() {
-//             if (location.hash == '#no-back') {
-//                 window.history.forward();
-//             }
-//         };
-//     }
-// }
-
-
-

@@ -19,91 +19,12 @@
 </head>
 
 <body>
-    <!-- nav bar ends here -->
-    <section class="top-navbar">
-        <nav class="navbar navbar-expand-lg vanish-navbar">
-            <div class="container">
-                <a class="navbar-brand" href="home.html">
-                    <img src="images/logo.png" alt="Logo"> <span>GardenWorks</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="service.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Gallery
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="gallery.html">Photos</a></li>
-                                <li><a class="dropdown-item" href="#">Videos</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="search-container" style="position: relative;">
-                        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search services..."
-                            aria-label="Search" oninput="searchServices()">
-                        <div id="searchSuggestions" class="suggestions-dropdown"
-                            style="display: none; position: absolute; width: 100%; background-color: white; z-index: 1000;">
-                            <!-- Suggestions will appear here -->
-                        </div>
 
-                    </div>
-                    <!-- wishlist, cart and profile -->
-                    <div>
-                        <div class="container text-center">
-                            <div class="row row-cols-1 row-cols-lg-3 ms-auto garden-navbar-icon">
-                                <div class="col">
-                                    <div class="cart-icon" data-toggle="modal" data-target="#cartModal">
-                                        <i class="bi bi-cart"></i>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div>
-                                        <i id="heartIcon" class="bi bi-suit-heart"></i>
-                                    </div>
-                                </div>
-                                <div class="col text-center">
-                                    <div class="dropdown">
-                                        <div class="garden-user-box rounded-circle dropdown-toggle" id="userDropdown"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            B
-                                        </div>
-                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                                            <li><a class="dropdown-item" href="#" onclick="logout()">Logout</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </section>
     <!-- navbar ends here -->
 
     <!-- Modal from js -->
 
-
-
+    <!-- bg -->
     <section class="garden-bgimg">
         <div class="container">
             <div class="garden-bgimg-content">
@@ -132,38 +53,19 @@
         <div class="garden-bgimg-overlay"></div>
     </section>
 
+
     <section class="garden-mission garden-m-t">
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
                 <div class="col">
                     <img src="images/image1.jpg" alt="Garden Mission">
                 </div>
-                <div class="col">
-                    <div class="garden-mission-content">
-                        <h4 class="garden-subtitle-h4">Mission & Story</h4>
-                        <h2>Bringing nature's beauty to your doorstep</h2>
-                        <p>
-                            At the heart of Gardenworks, we are passionate about bringing nature's beauty to your
-                            doorstep. With a deep-rooted love for gardens and a commitment to excellence, we have
-                            cultivated a reputation
-                            as a leading gardening service dedicated to transforming outdoor spaces into flourishing
-                            heavens.
-                        </p>
-                        <p>
-                            At the heart of Gardenworks, is a mission to create and maintain stunning gardens that
-                            enhance the well-being of our clients and contribute to the beauty of our community.
-                        </p>
-                        <p>
-                            We believe that a well-designed and cared for garden is more than just a collection of
-                            plants. It's a living work of art that brings joy, peace, and a touch of nature to your
-                            life.
-                        </p>
-                        <h5>Nepali Girls</h5>
-                        <h5 class="garden-italic">Founder of Garden Works</h5>
-                    </div>
+                <div class="col" id="missionContent">
+                    <!-- Dynamic content will be injected here -->
                 </div>
             </div>
         </div>
+    </section>
     </section>
 
     <section class="garden-services garden-m-t garden-p-tb">
@@ -472,37 +374,28 @@
         </div>
     </section>
 
-  
+
     <!-- Bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" ss
-        crossorigin="anonymous"></script>
+   <!-- Load jQuery first if needed -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <!-- Bootstrap Bundle JS (includes Popper) -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+       crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+   <!-- Owl Carousel, if used -->
+   <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+   <!-- Your custom scripts -->
    <script src="js/script.js"></script>
-
-
- <!-- scripts start here -->
-    <!-- Load jQuery first if needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <!-- Bootstrap Bundle JS (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- Owl Carousel, if used -->
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-
-    <!-- Your custom scripts -->
-    <script src="js/script.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/footer.js"></script>
-    <script src="js/about.js"></script>
-    <script src="js/search.js"></script>
-    <!-- script ends here -->
+   <script src="js/navbar.js"></script>
+   <script src="js/footer.js"></script>
+   <script src="js/search.js"></script>
+   <!-- script ends here -->
+    
 </body>
 
 </html>
