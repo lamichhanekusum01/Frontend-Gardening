@@ -112,6 +112,18 @@
 .garden-footer3 a:nth-child(3) {
     color: #0077b5;
 }
+/* for cart */
+.cart-dropdown-menu {
+    padding: 1% 1% 1% 1%;;
+    width: 500px; 
+    left: auto; /* Reset left alignment */
+    right: 15%; /* Align to the right edge of the cart icon */
+    top: 80px;
+}
+
+.cart-dropdown-menu>li:hover{
+    cursor: pointer;
+}
 
 @media (max-width:600px) {
     .garden-user-box {

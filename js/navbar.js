@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
+     // cart dummies
+     let dummyProducts = [
+        { id: 1, name: "Rose", price: 10 },
+        { id: 2, name: "Tulip", price: 8 },
+        { id: 3, name: "Sunflower", price: 6 }
+    ];
     // Insert the navbar HTML into the DOM at the beginning of the body
     const navbarHTML = `
     <section class="top-navbar">
@@ -52,6 +58,10 @@ document.addEventListener('DOMContentLoaded', function () {
                                     <div class="cart-icon" data-toggle="modal" data-target="#cartModal">
                                         <i class="bi bi-cart"></i>
                                     </div>
+                                    <ul class="dropdown-menu cart-dropdown-menu" aria-labelledby="cartDropdown" style="width:20%;">
+                                        <!-- Cart items will be injected here -->
+                                        
+                                    </ul>
                                 </div>
                                 <div class="col">
                                     <div>
@@ -90,11 +100,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     initializeNavbar();
     setupSearchFunctionality();
-    openModal();
+    // openModal();
     if (localStorage.getItem('darkMode') === 'true') {
         toggleDarkMode();
     }
-  
+
     // Get the current page's filename from the pathname
     const currentLocation = window.location.pathname.split('/').pop();
 
@@ -114,6 +124,20 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+   
+   
+    updateCartDropdown(dummyProducts);
+    const cartIcon = document.querySelector('.cart-icon');
+
+    if (!cartIcon) {
+        console.log('Cart icon not found');
+        return;
+    }
+    // Open cart list
+    cartIcon.addEventListener('click', function () {
+       toggleCartDropdown();
+    });
+
 });
 
 function initializeNavbar() {
@@ -129,9 +153,10 @@ function initializeNavbar() {
         });
     }
 
-    // Setup other interactive elements such as dropdowns here if necessary
+
 }
 
+// when user types into search bar
 function setupSearchFunctionality() {
     const input = document.getElementById('searchInput');
     const searchForm = document.getElementById('garden-search');
@@ -147,6 +172,7 @@ function setupSearchFunctionality() {
     }
 }
 
+//  serch services list
 function searchServices() {
     const input = document.getElementById('searchInput');
     const div = document.getElementById('searchSuggestions');
@@ -168,202 +194,14 @@ function searchServices() {
         }
     });
 }
-
+//  open the service page when user clicks any service
 function navigateToServicePage() {
     window.location.href = 'services.html';
 }
 
+// logout user
 function logout() {
     window.location.href = 'index.html';
-}
-
-
-//function to open modal 
-function openModal() {
-    const cartIcon = document.querySelector('.cart-icon');
-
-    if (!cartIcon) {
-        console.log('Cart icon not found');
-        return;
-    }
-    // Open modal event
-    cartIcon.addEventListener('click', function () {
-        var modal = new bootstrap.Modal(document.getElementById('cartModal'));
-        modal.show();
-    });
-
-    // Check if modal exists in the DOM and append only if it doesn't
-    let modalExists = document.querySelector('#cartModal');
-    if (!modalExists) {
-        const modalHTML = `
-        <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header bg-success text-white">
-                    <h5 class="modal-title" id="cartModalLabel">Gardening Cart</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form id="cartForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Your Phone Number</label>
-                            <input type="text" class="form-control" id="phone" name="phone" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="address">Delivery Address</label>
-                            <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Select Purchase Type</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="purchaseType" id="productPurchase"
-                                    value="product" required>
-                                <label class="form-check-label" for="productPurchase">Buy Product</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="purchaseType" id="servicePurchase"
-                                    value="service" required>
-                                <label class="form-check-label" for="servicePurchase">Buy Service</label>
-                            </div>
-                        </div>
-
-                        <div id="productSelection" style="display: none;">
-                            <div class="form-group">
-                                <label for="product">Select Product</label>
-                                <select class="form-control" id="product" name="product">
-                                    <option value="rose">Rose ($10)</option>
-                                    <option value="tulip">Tulip ($8)</option>
-                                    <option value="sunflower">Sunflower ($6)</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div id="serviceSelection" style="display: none;">
-                            <div class="form-group">
-                                <label for="service">Select Gardening Service</label>
-                                <select class="form-control" id="service" name="service">
-                                    <option value="lawn-mowing">Lawn Mowing ($50)</option>
-                                    <option value="weed-control">Weed Control ($30)</option>
-                                    <option value="planting">Planting ($20)</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-success" id="addToCartBtn">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-    </div>`
-        document.body.insertAdjacentHTML('beforeend', modalHTML);
-    }
-    else {
-        // modal
-        const productPurchase = document.getElementById('productPurchase');
-        const servicePurchase = document.getElementById('servicePurchase');
-        const productSelection = document.getElementById('productSelection');
-        const serviceSelection = document.getElementById('serviceSelection');
-
-        productPurchase.addEventListener('change', function () {
-            if (this.checked) {
-                productSelection.style.display = 'block';
-                serviceSelection.style.display = 'none';
-            }
-        });
-
-        servicePurchase.addEventListener('change', function () {
-            if (this.checked) {
-                productSelection.style.display = 'none';
-                serviceSelection.style.display = 'block';
-            }
-        });
-
-        const addToCartBtn = document.getElementById('addToCartBtn');
-        addToCartBtn.addEventListener('click', function (event) {
-            const form = document.getElementById('cartForm');
-            if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-                form.classList.add('was-validated');
-            } else {
-                event.preventDefault();
-                const formData = new FormData(form);
-                const purchaseType = formData.get('purchaseType');
-                if (purchaseType === 'product') {
-                    const product = formData.get('product');
-                    alert(`Added ${product} to cart!`);
-                } else if (purchaseType === 'service') {
-                    const service = formData.get('service');
-                    alert(`Added ${service} to cart!`);
-                }
-                // Redirect to home.html after adding to cart
-                window.location.href = 'home.html';
-            }
-        });
-        // modal components' functionalities
-        const registerBtn = document.querySelector('.modal-button');
-        const submitBtn = document.querySelector('.submit-button');
-        const closeBtn = document.querySelector('.close-modal');
-        const container = document.querySelector('.center-container');
-        const overlay = document.querySelector('.overlay');
-        const form = document.querySelector('form');
-        const name = document.getElementById('name');
-        const submittedText = document.querySelector('.submitted-text');
-        const span = document.querySelector('span');
-
-        const submitComplete = () => {
-            let storeName = '';
-
-            if (name.value === '') {
-                storeName = 'Tester';
-            } else {
-                storeName = name.value;
-            }
-
-            form.style.display = 'none';
-            submitBtn.style.display = 'none';
-            submittedText.style.display = 'block';
-            span.innerText = storeName;
-        }
-
-        const closeModal = () => {
-            overlay.style.display = 'none';
-            container.style.display = 'none';
-            submittedText.style.display = 'none';
-            form.style.display = 'flex';
-            submitBtn.style.display = 'block';
-            name.value = '';
-            storeName = '';
-        }
-
-        submitBtn.addEventListener('click', submitComplete)
-        closeBtn.addEventListener('click', closeModal)
-
-
-        // Open modal event
-        registerBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            overlay.style.display = 'block';
-            container.style.display = 'flex';
-        });
-    }
 }
 
 
@@ -386,3 +224,43 @@ function toggleDarkMode() {
     localStorage.setItem('darkMode', !darkModeStyleLink || !darkModeStyleLink.disabled);
 }
 
+
+//function to make cart work
+function updateCartDropdown(dummyProducts) {
+    this.dummyProducts = dummyProducts;
+    const cartDropdown = document.querySelector('.cart-icon + .dropdown-menu');
+    cartDropdown.innerHTML = ''; // Clear existing items
+
+    // Add each product to the dropdown
+    dummyProducts.forEach(product => {
+        const itemElement = document.createElement('li');
+        itemElement.innerHTML = `
+            <a class="dropdown-item d-flex justify-content-between align-items-center">
+                ${product.name} - $${product.price}
+                <button class="btn btn-sm btn-danger" onclick="removeFromCart(${product.id})">X</button>
+            </a>
+        `;
+        cartDropdown.appendChild(itemElement);
+    });
+
+    // Add a checkout button
+    const checkoutButton = document.createElement('li');
+    checkoutButton.innerHTML = `
+        <button class="btn btn-success w-100 " onclick="checkoutCart()">Checkout</button>
+    `;
+    cartDropdown.appendChild(checkoutButton);
+}
+
+function removeFromCart(productId) {
+    // Remove the product from the dummyProducts array
+    const productIndex = dummyProducts.findIndex(product => product.id === productId);
+    if (productIndex > -1) {
+        dummyProducts.splice(productIndex, 1);
+        updateCartDropdown(); // Update the cart dropdown
+    }
+}
+
+function toggleCartDropdown() {
+    const cartDropdown = document.querySelector('.cart-icon + .dropdown-menu');
+    cartDropdown.style.display = cartDropdown.style.display === 'block' ? 'none' : 'block';
+}
