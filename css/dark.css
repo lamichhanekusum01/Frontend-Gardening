@@ -1,0 +1,106 @@
+/* Dark Theme Overrides */
+
+/* General background and text color changes */
+body {
+    background-color: #121212; /* Dark background for the body */
+    color: #e0e0e0; /* Lighter text that contrasts well against a dark background */
+}
+
+/* Navbar modifications for dark theme */
+.top-navbar {
+    background-color: #333; /* Darker background for the navbar */
+}
+
+#logo-title, .navbar-nav .nav-link,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #b1cc33; /* Maintain the highlight color but ensure it contrasts well */
+}
+
+/* Buttons and links */
+.garden-button-color,
+.garden-search-btn,
+.garden-btn {
+    background-color: #424242; /* Darker background for buttons */
+    color: #ffffff; /* White text for better readability */
+}
+
+.garden-search-btn:hover,
+.garden-btn:hover {
+    background-color: #333333; /* Even darker on hover */
+    color: #b1cc33; /* Highlight color text on hover */
+}
+
+/* Footer adjustments */
+.garden-footer {
+    background-color: #282828; /* Dark background for the footer */
+}
+
+.garden-footer a,
+.garden-footer span {
+    color: #dddddd; /* Lighter text for readability */
+}
+
+.garden-footer .fa-seedling,
+.garden-footer .fa-video {
+    background-color: #333333; /* Darker background for icons in footer */
+}
+
+/* Background images with overlays for better visibility */
+.garden-bgimg,
+.garden-story {
+    background-blend-mode: darken; /* Ensures the image blends well with a darker overlay */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Specific section background modifications */
+.garden-services,
+.garden-testimonial,
+.garden-gallery,
+.garden-about {
+    background-color: #242424; /* Darker background variations for sections */
+}
+
+/* Border and shadow tweaks for visibility in dark mode */
+.garden-services-box,
+.grid-item,
+.map-contact-left,
+.flip .card,
+.garden-testimonial-box {
+    border-color: #333; /* Darker borders for better blending */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Lighter shadows for subtle depth */
+}
+
+/* Specific component adjustments */
+.garden-subtitle-h4 {
+    background-color: #333; /* Darker backgrounds for subtitle sections */
+}
+
+/* Scroll bar adjustments */
+::-webkit-scrollbar-track {
+    background: #333; /* Darker track for scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b1cc33; /* Keeping the highlight color for visibility */
+}
+
+/* Utility and miscellaneous classes */
+.garden-italic,
+.garden-p-color {
+    color: #ccc; /* Lighter grey text for italic and paragraph colors */
+}
+
+/* Ensuring hover effects are clear in dark mode */
+.garden-testimonial .owl-carousel .owl-nav button.owl-next:hover,
+.garden-testimonial .owl-carousel .owl-nav button.owl-prev:hover,
+.image:hover .overlay {
+    background-color: #69a911; /* Clear indication of interaction with a bright color */
+}
+
+.garden-testimonial-box {
+    color:#242424;
+}
+
+/* Apply dark styles to all possible elements mentioned in the original CSS */
+/* Further adjustments might be needed based on specific content and layout details */

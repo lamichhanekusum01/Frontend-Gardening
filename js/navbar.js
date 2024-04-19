@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <nav class="navbar navbar-expand-lg vanish-navbar">
             <div class="container">
                 <a class="navbar-brand" href="home.html">
-                    <img src="images/logo.png" alt="Logo"> <span>GardenWorks</span>
+                    <img src="images/logo.png" alt="Logo"> <span id="logo-title">GardenWorks</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -69,9 +69,18 @@ document.addEventListener('DOMContentLoaded', function () {
                                         </ul>
                                     </div>
                                 </div>
+                                <div class="col">
+                                <button id="darkModeToggle" class="btn btn-light" onclick="toggleDarkMode()">
+                                    <i class="bi bi-moon-stars-fill"></i> <!-- Bootstrap icons for moon -->
+                                </button>
+                                </div
+                            </div>
                             </div>
                         </div>
+                        
                     </div>
+                                    
+                   
                 </div>
             </div>
         </nav>
@@ -82,6 +91,10 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeNavbar();
     setupSearchFunctionality();
     openModal();
+    if (localStorage.getItem('darkMode') === 'true') {
+        toggleDarkMode();
+    }
+  
     // Get the current page's filename from the pathname
     const currentLocation = window.location.pathname.split('/').pop();
 
@@ -304,7 +317,7 @@ function openModal() {
                 window.location.href = 'home.html';
             }
         });
-// modal components' functionalities
+        // modal components' functionalities
         const registerBtn = document.querySelector('.modal-button');
         const submitBtn = document.querySelector('.submit-button');
         const closeBtn = document.querySelector('.close-modal');
@@ -352,3 +365,24 @@ function openModal() {
         });
     }
 }
+
+
+// function to toggle dark mode
+function toggleDarkMode() {
+    const darkModeStyleLink = document.getElementById('darkModeStyle');
+    if (!darkModeStyleLink) {
+        // If the dark mode stylesheet doesn't exist, create it and append to head
+        const link = document.createElement('link');
+        link.id = 'darkModeStyle';
+        link.rel = 'stylesheet';
+        link.href = 'css/dark.css'; // Path to your dark mode CSS file
+        document.head.appendChild(link);
+    } else {
+        // If it exists, toggle its disabled property
+        darkModeStyleLink.disabled = !darkModeStyleLink.disabled;
+    }
+
+    // Optionally save the dark mode state in localStorage to persist state across sessions
+    localStorage.setItem('darkMode', !darkModeStyleLink || !darkModeStyleLink.disabled);
+}
+
