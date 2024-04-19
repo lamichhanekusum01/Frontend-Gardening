@@ -25,17 +25,23 @@
     margin-top: 1rem;
 }
 
-.garden-team-box {
+.garden-team-box,
+.garden-about-story-img {
     width: 200px;
     height: 200px;
     margin: auto;
     text-align: center;
 }
 
-.garden-team-box img {
+.garden-team-box img,
+.garden-about-story-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.garden-about-story p{
+    margin-top:50px ;
 }
 
 .garden-about img{
