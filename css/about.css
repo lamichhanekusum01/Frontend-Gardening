@@ -3,6 +3,14 @@
     min-height: 380px;
 }
 
+.garden-about-story {
+    text-align: center;
+}
+
+.garden-about-story img{
+    margin: 2rem 0;
+}
+
 .garden-about {
     background-color: #f1f3f8;
 }
@@ -17,15 +25,26 @@
     margin-top: 1rem;
 }
 
-.garden-team-box {
+.garden-team-box,
+.garden-about-story-img {
     width: 200px;
     height: 200px;
     margin: auto;
     text-align: center;
 }
 
-.garden-team-box img {
+.garden-team-box img,
+.garden-about-story-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.garden-about-story p{
+    margin-top:50px ;
+}
+
+.garden-about img{
+    border: 1px solid #605f5f;
+    border-radius: 5px;
 }
