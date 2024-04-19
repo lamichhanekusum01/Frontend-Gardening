@@ -129,19 +129,6 @@
     color: yellow;
 }
 
-.garden-bgimg-content .fa-angle-down:before {
-    font-weight: 600;
-    font-size: 20px;
-    position: absolute;
-    bottom: -58px;
-    left: 41rem;
-    border: 2px solid #69a911;
-    padding: 10px 15px;
-    color: #69a911;
-    border-radius: 50%;
-    z-index: 2;
-}
-
 .garden-bgimg-overlay {
     position: absolute;
     top: 0px;
@@ -217,6 +204,8 @@
 
 .garden-testimonial .container>p {
     width: 600px;
+    margin: auto;
+    padding-bottom: 3.5rem;
 }
 
 .garden-testimonial .owl-carousel .owl-nav button.owl-next,

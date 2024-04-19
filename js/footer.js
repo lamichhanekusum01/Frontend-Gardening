@@ -59,7 +59,48 @@ document.addEventListener('DOMContentLoaded', function () {
                         </li>
                     </ul>
                 </div>
-                <!-- Additional Columns as needed -->
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html">Menu</a></li>
+                        <li class="mb-2"><a href="services.html">Business</a></li>
+                        <li class="mb-2"><a href="about.html">About us</a></li>
+                        <li class="mb-2"><a href="about.html">Tech on GardenWorks</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html">Content Strategy</a></li>
+                        <li class="mb-2"><a href="about.html">Content Development</a></li>
+                        <li class="mb-2"><a href="about.html">Content Creation</a></li>
+                        <li class="mb-2"><a href="about.html">Content Optimization</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html">Site Map</a></li>
+                        <li class="mb-2"><a href="contact.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <span>Call Us</span><br>
+                            <a href="contact.html">+1 123 112 0211</a>
+                        </li>
+                        <li class="mb-2">
+                            <span>Mail Us</span><br>
+                            <a href="contact.html">Info@Example.com</a>
+                        </li>
+                        <li class="mb-2">
+                            <span>Location</span><br>
+                            <a href="contact.html">271 Yorkland Blvd, North York, ON M2J 1S5</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <hr class="garden-footer-border">
             <div class="row mt-5 garden-footer3">
