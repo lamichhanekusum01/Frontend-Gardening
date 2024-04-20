@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">${service.name}</h5>
-                    <img src="${service.image}" class="card-img-top" alt="...">
+                    <div class="service-image">
+                        <img src="${service.image}" class="card-img-top" alt="...">
+                    </div>
                     <p class="card-text">${service.description}</p>
                 </div>
             </div>

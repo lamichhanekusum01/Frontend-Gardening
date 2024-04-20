@@ -89,7 +89,8 @@ button:hover {
   color: #333;
 }
 
-.plan-box {
+.plan-box,
+.card-body {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -97,7 +98,8 @@ button:hover {
   transition: transform 0.3s ease-in-out;
 }
 
-.plan-box:hover {
+.plan-box:hover,
+.card-body:hover{
   transform: translateY(-5px);
 }
 
@@ -161,6 +163,17 @@ button:hover {
   font-size: 18px;
   color: #777;
   margin-bottom: 40px;
+}
+
+.service-image {
+  width: 372px;
+  height: 434px;
+}
+
+.service-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 768px) {
