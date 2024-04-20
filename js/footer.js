@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <p>Start learning with experts around the world.</p>
                     <div class="row row-cols-lg-2 row-cols-1">
                         <div class="col">
-                        <a href="gallery.html">
+                        <a href="services.html">
                         <button class="garden-button-color">
                             Browse all Products
                         </button>

@@ -82,10 +82,10 @@ document.addEventListener('DOMContentLoaded', function() {
 // testimonials 
 document.addEventListener('DOMContentLoaded', function() {
     const testimonials = [
-        { image: 'test1.jpg', name: 'Lexi Robe', title: 'Student', text: 'Working with GardenWorks has been nothing short of transformative for our business. Their strategic insights and innovative approach to garden development helped us redefine our identity in a crowded market.' },
-        { image: 'test2.jpg', name: 'Lexi Robe', title: 'Student', text: 'Working with GardenWorks has been nothing short of transformative for our business. Their strategic insights and innovative approach to garden development helped us redefine our identity in a crowded market.' },
-        // More testimonials...
-        { image: 'test7.jpg', name: 'Lexi Robe', title: 'Student', text: 'Working with GardenWorks has been nothing short of transformative for our business. Their strategic insights and innovative approach to garden development helped us redefine our identity in a crowded market.' }
+        { image: 'test1.jpg', name: 'Monisha', title: 'Student', text: 'Working with GardenWorks has been nothing short of transformative for our business. Their strategic insights and innovative approach to garden development helped us redefine our identity in a crowded market.' },
+        { image: 'test6.jpg', name: 'Sushma', title: 'Student', text: 'Working with GardenWorks has been nothing short of transformative for our business. Their strategic insights and innovative approach to garden development helped us redefine our identity in a crowded market.' },
+        { image: 'test2.jpg', name: 'Bikash', title: 'Student', text: 'Working with GardenWorks has been nothing short of transformative for our business. Their strategic insights and innovative approach to garden development helped us redefine our identity in a crowded market.' },
+        { image: 'test3.jpg', name: 'Bibek', title: 'Student', text: 'Working with GardenWorks has been nothing short of transformative for our business. Their strategic insights and innovative approach to garden development helped us redefine our identity in a crowded market.' }
     ];
 
     function createTestimonials(testimonials) {
