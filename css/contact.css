@@ -1,7 +1,7 @@
 /* Start of Top content */
 .garden-bgimg {
-    background-image: url(../images/garden.jpg);
-    min-height: 380px;
+    background-image: url(../images/garden.jpg) !important;
+    min-height: 380px !important;
 }
 
 .top-text {
@@ -91,7 +91,6 @@
 .contact-info-text span {
     color: #999999;
     font-size: 16px;
-    font-weight: ;
     display: inline-block;
     width: 100%;
 }
