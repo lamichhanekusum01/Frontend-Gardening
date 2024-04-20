@@ -49,9 +49,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="col-lg-3 mb-3">
                     <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none">
                         <div width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img">
-                            <img src="images/logo.png" alt="Footer Logo">
+                            <img src="images/qr.jpg" alt="Footer Logo">
                         </div>
-                        <span class="fs-5">GardenWorks</span>
                     </a>
                     <ul class="list-unstyled small">
                         <li class="mb-2">
