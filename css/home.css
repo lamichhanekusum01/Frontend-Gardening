@@ -208,32 +208,6 @@
     padding-bottom: 3.5rem;
 }
 
-.garden-testimonial .owl-carousel .owl-nav button.owl-next,
-.garden-testimonial .owl-carousel .owl-nav button.owl-prev {
-    position: absolute !important;
-    top: -115px;
-    font-size: 30px;
-    color: #69a911;
-    border: 1px solid #69a911;
-    width: 45px;
-    border-radius: 50%;
-}
-
-.garden-testimonial .owl-carousel .owl-nav button.owl-next:hover,
-.garden-testimonial .owl-carousel .owl-nav button.owl-prev:hover {
-    color: #ffffff;
-    background-color: #69a911;
-    transition: 0.5s;
-}
-
-.garden-testimonial .owl-carousel .owl-nav button.owl-next {
-    right: 25px;
-}
-
-.garden-testimonial .owl-carousel .owl-nav button.owl-prev {
-    right: 80px;
-}
-
 .garden-testimonial-box {
     position: relative;
     height: 370px;
@@ -348,20 +322,6 @@
 
     .garden-testimonial-box {
         width: auto;
-    }
-
-    .garden-testimonial .owl-carousel .owl-nav button.owl-next,
-    .garden-testimonial .owl-carousel .owl-nav button.owl-prev {
-        bottom: -40px;
-        top: auto;
-    }
-
-    .garden-testimonial .owl-carousel .owl-nav button.owl-next {
-        right: 38%;
-    }
-
-    .garden-testimonial .owl-carousel .owl-nav button.owl-prev {
-        left: 38%;
     }
 }
 
