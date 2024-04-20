@@ -10,7 +10,7 @@
 //         answer.classList.toggle('show-answer');
 //     }
 // });
-debugger;
+
 // Get the form element
 var form = document.getElementById("contactForm");
 
