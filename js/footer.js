@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="col-lg-3 mb-3">
                     <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none">
                         <div width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img">
-                            <img src="images/qr.jpg" alt="Footer Logo">
+                            <img src="images/qr.jpg" alt="Footer Logo" style="width:200px;">
                         </div>
                     </a>
                     <ul class="list-unstyled small">
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         </li>
                         <li class="mb-2">
                             <span>Location</span><br>
-                            <a href="contact.html">271 Yorkland Blvd, North York, ON M2J 1S5</a>
+                            <a href="https://maps.app.goo.gl/T2KnzZ5yeCEBtFT16">271 Yorkland Blvd, North York, ON M2J 1S5</a>
                         </li>
                     </ul>
                 </div>
