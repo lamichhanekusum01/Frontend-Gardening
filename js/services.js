@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const services = [
-        { name: "Lawn Care", description: "Complete lawn maintenance and care." },
-        { name: "Garden Design", description: "Design your dream garden with our expert designers." },
-        { name: "Plant Health", description: "Ensure your plants are healthy with our expert care." },
-        { name: "Soil Treatment", description: "Optimize your soil for better growth and yield." }
+        { name: "Lawn Care", description: "Complete lawn maintenance and care.",image: "images/lawn.jpg" },
+        { name: "Garden Design", description: "Design your dream garden with our expert designers.",image: "images/design.jpg" },
+        { name: "Plant Health", description: "Ensure your plants are healthy with our expert care.",image: "images/plant.jpg" },
+        { name: "Soil Treatment", description: "Optimize your soil for better growth and yield.",image: "images/soil.jpg" }
     ];
 
     const servicesContainer = document.getElementById('servicesList');
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">${service.name}</h5>
-                    <img src="https://picsum.photos/200/150" class="card-img-top" alt="...">
+                    <img src="${service.image}" class="card-img-top" alt="...">
                     <p class="card-text">${service.description}</p>
                 </div>
             </div>
