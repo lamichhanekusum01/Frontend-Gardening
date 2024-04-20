@@ -150,17 +150,13 @@ p {
     color: #000;
 }
 
-.map .frame-35 {
-    border-color: #69A911;
-}
-
-.map .frame-36 {
+.map .garden-contact-directly div:nth-child(2) {
     background-color: #69A911;
     cursor: pointer;
 }
 
-.map .text-wrapper-19 {
-    color: #69A911;
+.map .garden-contact-directly p{
+    color: #fff;
 }
 
 .map .text-wrapper-13 {
