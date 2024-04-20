@@ -1,24 +1,26 @@
-// this js generates the team members and their names with iamges
 document.addEventListener('DOMContentLoaded', function() {
     const teamMembers = [
-        { name: "Bandana Pachabhaiya Magar", image: "images/test7.jpg" },
-        { name: "Kusum Lamichaney", image: "images/test7.jpg" },
-        { name: "Rabina Panta", image: "images/test7.jpg" },
-        { name: "Tsering Khando Lama", image: "images/tsering.jpg" }
+        { name: "Bandana Pachabhaiya Magar", image: "images/test7.jpg", position: "Team Member", def: "Passionate about cultivating green spaces and spreading the joy of gardening."},
+        { name: "Kusum Lamichaney", image: "images/test7.jpg", position: "Team Member", def: "Some description for Kusum Lamichaney."},
+        { name: "Rabina Panta", image: "images/test7.jpg", position: "Team Member", def: "Some description for Rabina Panta."},
+        { name: "Tsering Khando Lama", image: "images/tsering.jpg", position: "Team Member", def: "Some description for Tsering Khando Lama." }
     ];
 
     const container = document.getElementById('teamContainer');
 
     teamMembers.forEach(member => {
         const colDiv = document.createElement('div');
-        colDiv.className = 'col';
+        colDiv.className = 'col-lg-6';
         colDiv.innerHTML = `
-            <div class="garden-team-box">
-                <img src="${member.image}" alt="${member.name}">
-                <p>${member.name}</p>
+            <div class="member d-flex align-items-start">
+                <div class="pic"><img src="${member.image}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>${member.name}</h4>
+                    <span>${member.position}</span>
+                    <p>${member.def}</p>
+                </div>
             </div>
         `;
         container.appendChild(colDiv);
     });
 });
-

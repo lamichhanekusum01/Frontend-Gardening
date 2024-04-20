@@ -1,4 +1,7 @@
-
+.garden-bgimg {
+  background-image: url(../images/aboutcover.jpg) !important;
+  min-height: 380px !important;
+}
 /* Reset CSS */
 * {
     box-sizing: border-box;
