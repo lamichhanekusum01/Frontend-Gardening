@@ -99,7 +99,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         </li>
                         <li class="mb-2">
                             <span>Location</span><br>
-                            <a href="https://www.google.com/maps/place/271+Yorkland+Blvd,+North+York,+ON+M2J+1S5/@43.7737736,-79.3380237,17z/data=!4m6!3m5!1s0x89d4d2f61eed115b:0xdd036b4cf11ff672!8m2!3d43.7737698!4d-79.3354488!16s%2Fg%2F11bw3yv3rc?entry=ttu" target="_blank">271 Yorkland Blvd, North York, ON M2J 1S5</a>
+                            <a class"="mobile-only" href = "geo:43.7737736,-79.3380237" target="_blank">271 Yorkland Blvd, North York, ON M2J 1S5</a>
+                            <a class ="pc-only" href="https://www.google.com/maps/place/271+Yorkland+Blvd,+North+York,+ON+M2J+1S5/@43.7737736,-79.3380237,17z/data=!4m6!3m5!1s0x89d4d2f61eed115b:0xdd036b4cf11ff672!8m2!3d43.7737698!4d-79.3354488!16s%2Fg%2F11bw3yv3rc?entry=ttu" target="_blank">271 Yorkland Blvd, North York, ON M2J 1S5</a>
                         </li>
                     </ul>
                 </div>
