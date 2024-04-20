@@ -185,4 +185,9 @@ button:hover {
   .garden-services p {
     font-size: 16px;
   }
+  
+  .service-image {
+    width: auto;
+    height: auto;
+  }
 }
