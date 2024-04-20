@@ -151,6 +151,7 @@ button:hover {
 /* Garden Services Section */
 .garden-services {
   padding: 4rem 0;
+  background-color: transparent !important;
 }
 
 .garden-services h3 {

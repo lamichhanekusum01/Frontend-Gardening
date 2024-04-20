@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const services = [
-        { name: "Lawn Care", description: "Complete lawn maintenance and care.",image: "images/lawn.jpg" },
+        { name: "Lawn Care", description: "Complete lawn maintenance and care from us.",image: "images/lawn.jpg" },
         { name: "Garden Design", description: "Design your dream garden with our expert designers.",image: "images/design.jpg" },
         { name: "Plant Health", description: "Ensure your plants are healthy with our expert care.",image: "images/plant.jpg" },
         { name: "Soil Treatment", description: "Optimize your soil for better growth and yield.",image: "images/soil.jpg" }
