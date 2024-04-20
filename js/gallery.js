@@ -6,10 +6,18 @@ document.addEventListener('DOMContentLoaded', function() {
       { type: 'vegetable', src: 'images/vegetable1.jpg', alt: 'Vegetable Plant 1' },
       { type: 'service', src: 'images/services1.jpg', alt: 'Service 1' },
       { type: 'video', src: 'images/video.mp4', alt: 'Video 1' },
-      // More items...
       { type: 'flower', src: 'images/flower2.jpg', alt: 'Flower 2' },
+      { type: 'vegetable', src: 'images/vegetable2.jpg', alt: 'Vegetable Plant 2' },
+      { type: 'flower', src: 'images/flower3.jpg', alt: 'Flower 3' },
       { type: 'video', src: 'images/video2.mp4', alt: 'Video 2' },
-      { type: 'service', src: 'images/services3.jpg', alt: 'Service 3' }
+      { type: 'service', src: 'images/services3.jpg', alt: 'Service 3' },
+      { type: 'vegetable', src: 'images/vegetable3.jpg', alt: 'Vegetable Plant 3' },
+      { type: 'flower', src: 'images/flower4.jpg', alt: 'Flower 4' },
+      { type: 'video', src: 'images/video3.mp4', alt: 'Video 3' },
+      { type: 'flower', src: 'images/flower7.jpg', alt: 'Flower 7' },
+      { type: 'vegetable', src: 'images/vegetable4.jpg', alt: 'Vegetable Plant 4' },
+      { type: 'flower', src: 'images/flower6.jpg', alt: 'Flower 6' },
+      { type: 'vegetable', src: 'images/vegetable5.jpg', alt: 'Vegetable Plant 5' },
   ];
 
   function createGalleryItems(items) {
