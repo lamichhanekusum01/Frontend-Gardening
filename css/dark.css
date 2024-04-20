@@ -113,3 +113,21 @@ body {
 .about-info{
     color: #ccc;
 }
+
+.navbar-toggler{
+    color: rgb(255 255 255);
+    border: var(--bs-border-width) solid rgba(255, 255, 255);
+}
+
+.bs-navbar-toggler {
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3e%3cpath stroke="rgba(33, 37, 41, 0.75)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e');
+    background-color: white; /* Sets the background color */
+    border: none; /* Removes any border if present */
+}
+
+/* Ensure the background extends fully */
+.bs-navbar-toggler-icon {
+    display: block;
+    width: 30px; /* Adjust based on your design */
+    height: 30px; /* Adjust based on your design */
+}

@@ -173,6 +173,6 @@
 
 }
 
-@media only screen and (max-device-width: 1600px) {
-
+.navbar-brand img{
+    width: 5vw;;
 }
