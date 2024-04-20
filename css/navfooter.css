@@ -125,6 +125,13 @@
     cursor: pointer;
 }
 
+.mobile-only{
+    display: none;
+}
+
+.pc-only{
+    display: block;
+}
 @media (max-width:600px) {
     .garden-user-box {
         margin: auto;
@@ -169,6 +176,14 @@
     .navbar-nav {
         flex-grow: 1;
         justify-content: center;
+    }
+
+    .mobile-only{
+        display: block;
+    }
+
+    .pc-only{
+        display: none;
     }
 
 }

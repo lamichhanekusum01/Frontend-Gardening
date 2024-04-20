@@ -91,11 +91,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     <ul class="list-unstyled">
                         <li class="mb-2">
                             <span>Call Us</span><br>
-                            <a href="contact.html">+1 123 112 0211</a>
+                            <a class="pc-only" href="#">+1 123 112 0211</a>
+                            <a class="mobile-only" href="tel:+1 213 123 1234">+1 123 112 0211</a>
                         </li>
                         <li class="mb-2">
                             <span>Mail Us</span><br>
-                            <a href="contact.html">Info@Example.com</a>
+                            <a href="mailto:contact@html">Info@Example.com</a>
                         </li>
                         <li class="mb-2">
                             <span>Location</span><br>
