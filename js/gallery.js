@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
       { type: 'flower', src: 'images/flower7.jpg', alt: 'Flower 7' },
       { type: 'vegetable', src: 'images/vegetable4.jpg', alt: 'Vegetable Plant 4' },
       { type: 'flower', src: 'images/flower6.jpg', alt: 'Flower 6' },
-      { type: 'vegetable', src: 'images/vegetable5.jpg', alt: 'Vegetable Plant 5' },
+      { type: 'vegetable', src: 'images/vegetable5.jpg', alt: 'Vegetable Plant 5' }
   ];
 
   function createGalleryItems(items) {
