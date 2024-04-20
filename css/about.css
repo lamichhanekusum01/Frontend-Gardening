@@ -280,7 +280,8 @@
     border: 1px solid #605f5f;
     border-radius: 5px;
 };
-    
+
+
   
   
   @media screen and (max-width: 1238px) {
@@ -410,4 +411,8 @@
       height: 65%;
     }
   }
-  
+  .a-link{
+    text-decoration: none;
+    color: #242424;
+  }
+      
