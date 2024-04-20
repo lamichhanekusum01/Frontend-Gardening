@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
     `;
 
+    
+
     // Inject the content into the DOM
     missionContent.innerHTML = htmlContent;
 
