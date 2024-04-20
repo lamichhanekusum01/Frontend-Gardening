@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const teamMembers = [
         { name: "Bandana Pachabhaiya Magar", image: "images/bandana.jpg", position: "Team Member", def: "Passionate about cultivating green spaces and spreading the joy of gardening."},
-        { name: "Kusum Lamichaney", image: "images/kusum.jpg", position: "Team Member", def: "Some description for Kusum Lamichaney."},
-        { name: "Rabina Panta", image: "images/me.jpg", position: "Team Member", def: "Some description for Rabina Panta."},
-        { name: "Tsering Khando Lama", image: "images/khando.jpg", position: "Team Member", def: "Some description for Tsering Khando Lama." }
+        { name: "Kusum Lamichaney", image: "images/kusum.jpg", position: "Team Member", def: "Loves spending time with plants."},
+        { name: "Rabina Panta", image: "images/me.jpg", position: "Team Member", def: "Passionate about helping others find their perfect green friend."},
+        { name: "Tsering Khando Lama", image: "images/khando.jpg", position: "Team Member", def: "Loves Garden and Grdening." }
     ];
 
     const container = document.getElementById('teamContainer');
